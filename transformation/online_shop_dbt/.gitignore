@@ -1,0 +1,5 @@
+
+target/
+dbt_packages/
+logs/
+opensource-marketing-dwh-e19cb8481149.json
