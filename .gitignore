@@ -3,3 +3,5 @@ todo.md
 shopify_orders.csv
 bigquery_credentials/
 transformation/target/manifest.json
+transformation/target
+transformation/logs
