@@ -10,7 +10,7 @@ from facebook_ads import (
 
 
 def load_all_ads_objects() -> None:
-    """Loads campaigns, ad sets, ads, ad creatives and leads"""
+    """Loads campaigns, ad sets, ads"""
     pipeline = dlt.pipeline(
         pipeline_name="facebook_ads",
         destination='bigquery',
@@ -103,23 +103,35 @@ def load_and_enrich_objects() -> None:
 
 
 def load_insights() -> None:
-    """Shows how to load daily and weekly insights with 7 days attribution window"""
+    """Loads insights with 7 days attribution window"""
     pipeline = dlt.pipeline(
         pipeline_name="facebook_insights",
         destination='bigquery',
-        dataset_name="facebook_insights",
-        progress="log"
+        dataset_name="facebook_insights_data",
+        progress="log",
+        # pipelines_dir="." # specify a directory for dlt pipeline meta data. dlt defaults to $PWD/.dlt/your_pipeline_name, which will not be mounted to docker
     )
-    # just load 1 past day with attribution window of 7 days - that will re-acquire last 8 days + today
-    i_daily = facebook_insights_source(initial_load_past_days=1)
+
+    i_daily = facebook_insights_source(
+        initial_load_past_days=365,
+        breakdowns="ads_insights", # we only need ads insights breakdown for now
+        action_breakdowns=("action_type",), # breakdown actions by type
+        action_attribution_windows=("7d_click", "1d_view"), # agency standard is set here
+        batch_size=50, # may need to be adjusted
+        level="ad"
+        )
+    # i_weekly = facebook_insights_source(
+    #     initial_load_past_days=1,
+    #     time_increment_days=7)
     info = pipeline.run(i_daily)
     print(info)
 
 
 if __name__ == "__main__":
-    load_all_ads_objects()
+    # load_all_ads_objects()
+    load_insights()
+
     # merge_ads_objects()
     # load_ads_with_custom_fields()
     # load_only_disapproved_ads()
     # load_and_enrich_objects()
-    # load_insights()
