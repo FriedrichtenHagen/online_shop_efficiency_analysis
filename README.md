@@ -53,7 +53,15 @@ A JSON file that includes your service account private key will then be download
 
 
 Setup dlt:
-...
+Create a service account for your new project from the Service accounts page. For more information, refer to Create a service account in the Google Cloud docs. As an example for this guide, you can:
+Type dbt-user as the Service account name
+From the Select a role dropdown, choose BigQuery Job User and BigQuery Data Editor roles and click Continue
+
+
+
+
+
+
 config.toml
 secrets.toml
 
