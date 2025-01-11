@@ -99,23 +99,24 @@ def facebook_ads_source(
     ) -> Iterator[TDataItems]:
         yield get_data_chunked(account.get_ad_sets, fields, states, chunk_size)
 
-    @dlt.transformer(primary_key="id", write_disposition="replace", selected=True)
-    def leads(
-        items: TDataItems,
-        fields: Sequence[str] = DEFAULT_LEAD_FIELDS,
-        states: Sequence[str] = None,
-    ) -> Iterator[TDataItems]:
-        for item in items:
-            ad = Ad(item["id"])
-            yield get_data_chunked(ad.get_leads, fields, states, chunk_size)
+    # @dlt.transformer(primary_key="id", write_disposition="replace", selected=True)
+    # def leads(
+    #     items: TDataItems,
+    #     fields: Sequence[str] = DEFAULT_LEAD_FIELDS,
+    #     states: Sequence[str] = None,
+    # ) -> Iterator[TDataItems]:
+    #     for item in items:
+    #         ad = Ad(item["id"])
+    #         yield get_data_chunked(ad.get_leads, fields, states, chunk_size)
 
-    @dlt.resource(primary_key="id", write_disposition="replace")
-    def ad_creatives(
-        fields: Sequence[str] = DEFAULT_ADCREATIVE_FIELDS, states: Sequence[str] = None
-    ) -> Iterator[TDataItems]:
-        yield get_data_chunked(account.get_ad_creatives, fields, states, chunk_size)
+    # @dlt.resource(primary_key="id", write_disposition="replace")
+    # def ad_creatives(
+    #     fields: Sequence[str] = DEFAULT_ADCREATIVE_FIELDS, states: Sequence[str] = None
+    # ) -> Iterator[TDataItems]:
+    #     yield get_data_chunked(account.get_ad_creatives, fields, states, chunk_size)
 
-    return campaigns, ads, ad_sets, ad_creatives, ads | leads
+    return campaigns, ads, ad_sets
+#ad_creatives, ads | leads
 
 
 @dlt.source(name="facebook_ads")

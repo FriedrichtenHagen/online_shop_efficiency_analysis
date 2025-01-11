@@ -14,8 +14,8 @@ def load_all_ads_objects() -> None:
     pipeline = dlt.pipeline(
         pipeline_name="facebook_ads",
         destination='bigquery',
-        dataset_name="facebook_ads_data",
-        dev_mode=True,
+        dataset_name="facebook_ads_dimensions",
+        progress="log"
     )
     info = pipeline.run(facebook_ads_source())
     print(info)
@@ -107,19 +107,18 @@ def load_insights() -> None:
     pipeline = dlt.pipeline(
         pipeline_name="facebook_insights",
         destination='bigquery',
-        dataset_name="facebook_insights_data",
-        dev_mode=True,
+        dataset_name="facebook_insights",
+        progress="log"
     )
     # just load 1 past day with attribution window of 7 days - that will re-acquire last 8 days + today
     i_daily = facebook_insights_source(initial_load_past_days=1)
-    i_weekly = facebook_insights_source(initial_load_past_days=1, time_increment_days=7)
-    info = pipeline.run([i_daily, i_weekly])
+    info = pipeline.run(i_daily)
     print(info)
 
 
 if __name__ == "__main__":
-    # load_all_ads_objects()
-    merge_ads_objects()
+    load_all_ads_objects()
+    # merge_ads_objects()
     # load_ads_with_custom_fields()
     # load_only_disapproved_ads()
     # load_and_enrich_objects()
