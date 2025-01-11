@@ -1,1 +1,1 @@
-SELECT 1 AS test_id
+SELECT * FROM opensource-marketing-dwh.facebook_ads_dimensions.ad_sets
