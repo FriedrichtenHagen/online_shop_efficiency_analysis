@@ -391,3 +391,1096 @@ where id = 1;
 [0m15:02:40.394094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111cf8890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111cf8aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116dee6c0>]}
 [0m15:02:40.394420 [debug] [MainThread]: Flushing usage events
 [0m15:02:40.870471 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:09:51.003672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084c1310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c4f8710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c4f8440>]}
+
+
+============================== 15:09:51.006735 | 8f7cf9fc-5e09-451a-a08b-0f8eded2745f ==============================
+[0m15:09:51.006735 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:09:51.007065 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:09:51.016188 [info ] [MainThread]: dbt version: 1.9.1
+[0m15:09:51.016516 [info ] [MainThread]: python version: 3.12.7
+[0m15:09:51.016688 [info ] [MainThread]: python path: /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/bin/python3.12
+[0m15:09:51.016830 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m15:09:51.572879 [info ] [MainThread]: Using profiles dir at /Users/friedrichtenhagen/.dbt
+[0m15:09:51.573147 [info ] [MainThread]: Using profiles.yml file at /Users/friedrichtenhagen/.dbt/profiles.yml
+[0m15:09:51.573299 [info ] [MainThread]: Using dbt_project.yml file at /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/dbt_project.yml
+[0m15:09:51.573434 [info ] [MainThread]: adapter type: bigquery
+[0m15:09:51.573565 [info ] [MainThread]: adapter version: 1.9.1
+[0m15:09:51.628751 [info ] [MainThread]: Configuration:
+[0m15:09:51.629018 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:09:51.629167 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:09:51.629299 [info ] [MainThread]: Required dependencies:
+[0m15:09:51.629487 [debug] [MainThread]: Executing "git --help"
+[0m15:09:51.647102 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:09:51.647685 [debug] [MainThread]: STDERR: "b''"
+[0m15:09:51.647863 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:09:51.648054 [info ] [MainThread]: Connection:
+[0m15:09:51.648241 [info ] [MainThread]:   method: service-account
+[0m15:09:51.648370 [info ] [MainThread]:   database: opensource-marketing-dwh
+[0m15:09:51.648493 [info ] [MainThread]:   execution_project: opensource-marketing-dwh
+[0m15:09:51.648608 [info ] [MainThread]:   schema: dbt_transformations
+[0m15:09:51.648726 [info ] [MainThread]:   location: EU
+[0m15:09:51.648843 [info ] [MainThread]:   priority: interactive
+[0m15:09:51.648961 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m15:09:51.649072 [info ] [MainThread]:   impersonate_service_account: None
+[0m15:09:51.649188 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m15:09:51.649299 [info ] [MainThread]:   job_retries: 1
+[0m15:09:51.649411 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m15:09:51.649525 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m15:09:51.649637 [info ] [MainThread]:   timeout_seconds: 300
+[0m15:09:51.649750 [info ] [MainThread]:   client_id: None
+[0m15:09:51.649858 [info ] [MainThread]:   token_uri: None
+[0m15:09:51.649970 [info ] [MainThread]:   dataproc_region: None
+[0m15:09:51.650081 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m15:09:51.650190 [info ] [MainThread]:   gcs_bucket: None
+[0m15:09:51.650297 [info ] [MainThread]:   dataproc_batch: None
+[0m15:09:51.650637 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:09:51.730607 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m15:09:51.731202 [debug] [MainThread]: On debug: select 1 as id
+[0m15:09:51.731382 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:09:52.233030 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:EU:c0d68a70-c1df-46a1-8475-24bba8f552d8&page=queryresults
+[0m15:09:52.644793 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:09:52.646259 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:09:52.651079 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.6895028, "process_in_blocks": "0", "process_kernel_time": 0.235796, "process_mem_max_rss": "202686464", "process_out_blocks": "0", "process_user_time": 1.226294}
+[0m15:09:52.651651 [debug] [MainThread]: Command `dbt debug` succeeded at 15:09:52.651538 after 1.69 seconds
+[0m15:09:52.652011 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:09:52.652383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c1c9a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073572f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13d351850>]}
+[0m15:09:52.652801 [debug] [MainThread]: Flushing usage events
+[0m15:09:53.130091 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:09:56.746334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10691ce30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069a4b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069a4770>]}
+
+
+============================== 15:09:56.748580 | 5ea2ae30-a842-44f4-bdaf-6b5a7c215266 ==============================
+[0m15:09:56.748580 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:09:56.748924 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:09:57.338274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5ea2ae30-a842-44f4-bdaf-6b5a7c215266', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c9ef1a0>]}
+[0m15:09:57.373409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5ea2ae30-a842-44f4-bdaf-6b5a7c215266', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b88bfb0>]}
+[0m15:09:57.373787 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:09:57.459731 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:09:57.518152 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:09:57.518382 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:09:57.535850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ea2ae30-a842-44f4-bdaf-6b5a7c215266', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cbbe420>]}
+[0m15:09:57.569362 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m15:09:57.571327 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m15:09:57.582559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5ea2ae30-a842-44f4-bdaf-6b5a7c215266', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd24f50>]}
+[0m15:09:57.582841 [info ] [MainThread]: Found 2 models, 4 data tests, 489 macros
+[0m15:09:57.583012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ea2ae30-a842-44f4-bdaf-6b5a7c215266', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106803110>]}
+[0m15:09:57.583954 [info ] [MainThread]: 
+[0m15:09:57.584133 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:09:57.584270 [info ] [MainThread]: 
+[0m15:09:57.584522 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:09:57.586383 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_opensource-marketing-dwh'
+[0m15:09:57.586612 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:09:57.956021 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh, now list_opensource-marketing-dwh_dbt_transformations)
+[0m15:09:57.957249 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:09:58.289855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ea2ae30-a842-44f4-bdaf-6b5a7c215266', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ce2a9f0>]}
+[0m15:09:58.291110 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:09:58.294585 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.my_first_dbt_model
+[0m15:09:58.295253 [info ] [Thread-1 (]: 1 of 2 START sql table model dbt_transformations.my_first_dbt_model ............ [RUN]
+[0m15:09:58.295720 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh_dbt_transformations, now model.online_shop_dbt.my_first_dbt_model)
+[0m15:09:58.296074 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.my_first_dbt_model
+[0m15:09:58.306833 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.my_first_dbt_model"
+[0m15:09:58.307734 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.my_first_dbt_model
+[0m15:09:58.374135 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:09:58.725583 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.my_first_dbt_model"
+[0m15:09:58.726629 [debug] [Thread-1 (]: On model.online_shop_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `opensource-marketing-dwh`.`dbt_transformations`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m15:09:59.060262 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:EU:18f518d1-3a03-4a3f-9866-73fb98eb5f9a&page=queryresults
+[0m15:10:01.336803 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5ea2ae30-a842-44f4-bdaf-6b5a7c215266', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105de07a0>]}
+[0m15:10:01.337554 [info ] [Thread-1 (]: 1 of 2 OK created sql table model dbt_transformations.my_first_dbt_model ....... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.04s]
+[0m15:10:01.338183 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.my_first_dbt_model
+[0m15:10:01.338572 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.my_second_dbt_model
+[0m15:10:01.339099 [info ] [Thread-1 (]: 2 of 2 START sql view model dbt_transformations.my_second_dbt_model ............ [RUN]
+[0m15:10:01.339587 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.my_first_dbt_model, now model.online_shop_dbt.my_second_dbt_model)
+[0m15:10:01.339954 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.my_second_dbt_model
+[0m15:10:01.342196 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.my_second_dbt_model"
+[0m15:10:01.342838 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.my_second_dbt_model
+[0m15:10:01.362643 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.my_second_dbt_model"
+[0m15:10:01.363406 [debug] [Thread-1 (]: On model.online_shop_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.my_second_dbt_model"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `opensource-marketing-dwh.facebook_ads_dimensions.ads`;
+
+
+[0m15:10:01.363729 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:10:01.824636 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:EU:703c9b9b-b062-4ae8-a1d8-6343494b00c9&page=queryresults
+[0m15:10:01.826195 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:EU:703c9b9b-b062-4ae8-a1d8-6343494b00c9&page=queryresults
+[0m15:10:01.837734 [debug] [Thread-1 (]: Database Error in model my_second_dbt_model (online_shop_dbt/models/example/my_second_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:facebook_ads_dimensions was not found in location EU
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_second_dbt_model.sql
+[0m15:10:01.838750 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5ea2ae30-a842-44f4-bdaf-6b5a7c215266', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d21dc10>]}
+[0m15:10:01.839856 [error] [Thread-1 (]: 2 of 2 ERROR creating sql view model dbt_transformations.my_second_dbt_model ... [[31mERROR[0m in 0.50s]
+[0m15:10:01.840795 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.my_second_dbt_model
+[0m15:10:01.841355 [debug] [Thread-4 (]: Marking all children of 'model.online_shop_dbt.my_second_dbt_model' to be skipped because of status 'error'.  Reason: Database Error in model my_second_dbt_model (online_shop_dbt/models/example/my_second_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:facebook_ads_dimensions was not found in location EU
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_second_dbt_model.sql.
+[0m15:10:01.843035 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:10:01.844817 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:10:01.845128 [debug] [MainThread]: Connection 'model.online_shop_dbt.my_second_dbt_model' was properly closed.
+[0m15:10:01.845430 [info ] [MainThread]: 
+[0m15:10:01.845733 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 4.26 seconds (4.26s).
+[0m15:10:01.846478 [debug] [MainThread]: Command end result
+[0m15:10:01.870047 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m15:10:01.871555 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m15:10:01.876494 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/run_results.json
+[0m15:10:01.876779 [info ] [MainThread]: 
+[0m15:10:01.877061 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:10:01.877288 [info ] [MainThread]: 
+[0m15:10:01.877558 [error] [MainThread]:   Database Error in model my_second_dbt_model (online_shop_dbt/models/example/my_second_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:facebook_ads_dimensions was not found in location EU
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_second_dbt_model.sql
+[0m15:10:01.877773 [info ] [MainThread]: 
+[0m15:10:01.877990 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m15:10:01.880138 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 5.170774, "process_in_blocks": "0", "process_kernel_time": 0.24405, "process_mem_max_rss": "211943424", "process_out_blocks": "0", "process_user_time": 1.746517}
+[0m15:10:01.880450 [debug] [MainThread]: Command `dbt run` failed at 15:10:01.880384 after 5.17 seconds
+[0m15:10:01.880725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10691dc40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d12bcb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105de18e0>]}
+[0m15:10:01.880987 [debug] [MainThread]: Flushing usage events
+[0m15:10:02.323480 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:14:31.837498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104967e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049c4740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049c4470>]}
+
+
+============================== 15:14:31.840744 | abb08859-aeeb-46a0-b5ff-616e9965008c ==============================
+[0m15:14:31.840744 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:14:31.841086 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m15:14:31.852485 [info ] [MainThread]: dbt version: 1.9.1
+[0m15:14:31.852797 [info ] [MainThread]: python version: 3.12.7
+[0m15:14:31.852982 [info ] [MainThread]: python path: /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/bin/python3.12
+[0m15:14:31.853194 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m15:14:32.457557 [info ] [MainThread]: Using profiles dir at /Users/friedrichtenhagen/.dbt
+[0m15:14:32.457821 [info ] [MainThread]: Using profiles.yml file at /Users/friedrichtenhagen/.dbt/profiles.yml
+[0m15:14:32.457974 [info ] [MainThread]: Using dbt_project.yml file at /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/dbt_project.yml
+[0m15:14:32.458127 [info ] [MainThread]: adapter type: bigquery
+[0m15:14:32.458252 [info ] [MainThread]: adapter version: 1.9.1
+[0m15:14:32.513970 [info ] [MainThread]: Configuration:
+[0m15:14:32.514232 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:14:32.514384 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:14:32.514521 [info ] [MainThread]: Required dependencies:
+[0m15:14:32.514717 [debug] [MainThread]: Executing "git --help"
+[0m15:14:32.530279 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:14:32.530876 [debug] [MainThread]: STDERR: "b''"
+[0m15:14:32.531065 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:14:32.531233 [info ] [MainThread]: Connection:
+[0m15:14:32.531414 [info ] [MainThread]:   method: service-account
+[0m15:14:32.531538 [info ] [MainThread]:   database: opensource-marketing-dwh
+[0m15:14:32.531658 [info ] [MainThread]:   execution_project: opensource-marketing-dwh
+[0m15:14:32.531776 [info ] [MainThread]:   schema: dbt_transformations
+[0m15:14:32.531892 [info ] [MainThread]:   location: europe-west1
+[0m15:14:32.532007 [info ] [MainThread]:   priority: interactive
+[0m15:14:32.532123 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m15:14:32.532235 [info ] [MainThread]:   impersonate_service_account: None
+[0m15:14:32.532347 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m15:14:32.532459 [info ] [MainThread]:   job_retries: 1
+[0m15:14:32.532569 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m15:14:32.532683 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m15:14:32.532795 [info ] [MainThread]:   timeout_seconds: 300
+[0m15:14:32.532909 [info ] [MainThread]:   client_id: None
+[0m15:14:32.533028 [info ] [MainThread]:   token_uri: None
+[0m15:14:32.533135 [info ] [MainThread]:   dataproc_region: None
+[0m15:14:32.533247 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m15:14:32.533367 [info ] [MainThread]:   gcs_bucket: None
+[0m15:14:32.533474 [info ] [MainThread]:   dataproc_batch: None
+[0m15:14:32.533817 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:14:32.619445 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m15:14:32.619800 [debug] [MainThread]: On debug: select 1 as id
+[0m15:14:32.619979 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:14:35.398212 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:99bf1260-00b4-410f-9aa2-ad8a9f5f4083&page=queryresults
+[0m15:14:35.769901 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:14:35.770995 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:14:35.776103 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 3.9804854, "process_in_blocks": "0", "process_kernel_time": 0.248344, "process_mem_max_rss": "204767232", "process_out_blocks": "0", "process_user_time": 1.225615}
+[0m15:14:35.776657 [debug] [MainThread]: Command `dbt debug` succeeded at 15:14:35.776543 after 3.98 seconds
+[0m15:14:35.777024 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:14:35.777443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aada660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104864e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a43c200>]}
+[0m15:14:35.778090 [debug] [MainThread]: Flushing usage events
+[0m15:14:36.232393 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:14:40.277539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104254c80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047b46e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10483c860>]}
+
+
+============================== 15:14:40.280342 | ff12daf7-a4ae-45d4-b3e7-f383ce8c6fd5 ==============================
+[0m15:14:40.280342 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:14:40.280671 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:14:40.916355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ff12daf7-a4ae-45d4-b3e7-f383ce8c6fd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5d1610>]}
+[0m15:14:40.951477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ff12daf7-a4ae-45d4-b3e7-f383ce8c6fd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a289f10>]}
+[0m15:14:40.951843 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:14:41.039905 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:14:41.098704 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:14:41.098926 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:14:41.116451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ff12daf7-a4ae-45d4-b3e7-f383ce8c6fd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa18950>]}
+[0m15:14:41.149389 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m15:14:41.151329 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m15:14:41.162725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ff12daf7-a4ae-45d4-b3e7-f383ce8c6fd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adb5580>]}
+[0m15:14:41.162995 [info ] [MainThread]: Found 2 models, 4 data tests, 489 macros
+[0m15:14:41.163170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ff12daf7-a4ae-45d4-b3e7-f383ce8c6fd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa5a300>]}
+[0m15:14:41.164074 [info ] [MainThread]: 
+[0m15:14:41.164250 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:14:41.164389 [info ] [MainThread]: 
+[0m15:14:41.164630 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:14:41.166450 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_opensource-marketing-dwh'
+[0m15:14:41.166655 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:14:41.512969 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh, now list_opensource-marketing-dwh_dbt_transformations)
+[0m15:14:41.514228 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:14:41.857652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ff12daf7-a4ae-45d4-b3e7-f383ce8c6fd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1034c8710>]}
+[0m15:14:41.859001 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:14:41.862705 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.my_first_dbt_model
+[0m15:14:41.863356 [info ] [Thread-1 (]: 1 of 2 START sql table model dbt_transformations.my_first_dbt_model ............ [RUN]
+[0m15:14:41.863804 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh_dbt_transformations, now model.online_shop_dbt.my_first_dbt_model)
+[0m15:14:41.864153 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.my_first_dbt_model
+[0m15:14:41.874946 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.my_first_dbt_model"
+[0m15:14:41.875826 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.my_first_dbt_model
+[0m15:14:41.941785 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:14:42.276308 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.my_first_dbt_model"
+[0m15:14:42.277354 [debug] [Thread-1 (]: On model.online_shop_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `opensource-marketing-dwh`.`dbt_transformations`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m15:14:42.426533 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:6713b983-3f26-4297-a183-0a771a0b5fe9&page=queryresults
+[0m15:14:42.427992 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:6713b983-3f26-4297-a183-0a771a0b5fe9&page=queryresults
+[0m15:14:42.438512 [debug] [Thread-1 (]: Database Error in model my_first_dbt_model (online_shop_dbt/models/example/my_first_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_first_dbt_model.sql
+[0m15:14:42.440505 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff12daf7-a4ae-45d4-b3e7-f383ce8c6fd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad8cf20>]}
+[0m15:14:42.441194 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model dbt_transformations.my_first_dbt_model ... [[31mERROR[0m in 0.58s]
+[0m15:14:42.441766 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.my_first_dbt_model
+[0m15:14:42.442284 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.my_second_dbt_model
+[0m15:14:42.442835 [debug] [Thread-4 (]: Marking all children of 'model.online_shop_dbt.my_first_dbt_model' to be skipped because of status 'error'.  Reason: Database Error in model my_first_dbt_model (online_shop_dbt/models/example/my_first_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_first_dbt_model.sql.
+[0m15:14:42.443359 [info ] [Thread-1 (]: 2 of 2 START sql view model dbt_transformations.my_second_dbt_model ............ [RUN]
+[0m15:14:42.444848 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.my_first_dbt_model, now model.online_shop_dbt.my_second_dbt_model)
+[0m15:14:42.445551 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.my_second_dbt_model
+[0m15:14:42.447974 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.my_second_dbt_model"
+[0m15:14:42.448704 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.my_second_dbt_model
+[0m15:14:42.468790 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.my_second_dbt_model"
+[0m15:14:42.469622 [debug] [Thread-1 (]: On model.online_shop_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.my_second_dbt_model"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `opensource-marketing-dwh.facebook_ads_dimensions.ads`;
+
+
+[0m15:14:42.469991 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:14:42.793827 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:d001e3a6-3a95-4493-9162-745e83842b30&page=queryresults
+[0m15:14:42.795493 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:d001e3a6-3a95-4493-9162-745e83842b30&page=queryresults
+[0m15:14:42.801855 [debug] [Thread-1 (]: Database Error in model my_second_dbt_model (online_shop_dbt/models/example/my_second_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_second_dbt_model.sql
+[0m15:14:42.802586 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff12daf7-a4ae-45d4-b3e7-f383ce8c6fd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a88baa0>]}
+[0m15:14:42.803340 [error] [Thread-1 (]: 2 of 2 ERROR creating sql view model dbt_transformations.my_second_dbt_model ... [[31mERROR[0m in 0.36s]
+[0m15:14:42.803923 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.my_second_dbt_model
+[0m15:14:42.804380 [debug] [Thread-4 (]: Marking all children of 'model.online_shop_dbt.my_second_dbt_model' to be skipped because of status 'error'.  Reason: Database Error in model my_second_dbt_model (online_shop_dbt/models/example/my_second_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_second_dbt_model.sql.
+[0m15:14:42.805507 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:14:42.807387 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:14:42.807724 [debug] [MainThread]: Connection 'model.online_shop_dbt.my_second_dbt_model' was properly closed.
+[0m15:14:42.808053 [info ] [MainThread]: 
+[0m15:14:42.808594 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 1.64 seconds (1.64s).
+[0m15:14:42.810160 [debug] [MainThread]: Command end result
+[0m15:14:42.834200 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m15:14:42.835581 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m15:14:42.841110 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/run_results.json
+[0m15:14:42.841531 [info ] [MainThread]: 
+[0m15:14:42.841891 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m15:14:42.842165 [info ] [MainThread]: 
+[0m15:14:42.842480 [error] [MainThread]:   Database Error in model my_first_dbt_model (online_shop_dbt/models/example/my_first_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_first_dbt_model.sql
+[0m15:14:42.842733 [info ] [MainThread]: 
+[0m15:14:42.843017 [error] [MainThread]:   Database Error in model my_second_dbt_model (online_shop_dbt/models/example/my_second_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_second_dbt_model.sql
+[0m15:14:42.843252 [info ] [MainThread]: 
+[0m15:14:42.843487 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+[0m15:14:42.845751 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.608121, "process_in_blocks": "0", "process_kernel_time": 0.227354, "process_mem_max_rss": "206946304", "process_out_blocks": "0", "process_user_time": 1.70418}
+[0m15:14:42.846100 [debug] [MainThread]: Command `dbt run` failed at 15:14:42.846033 after 2.61 seconds
+[0m15:14:42.846386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10483c980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10483cb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad6ff80>]}
+[0m15:14:42.846658 [debug] [MainThread]: Flushing usage events
+[0m15:14:43.291268 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:15:22.769969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102c5bf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bf4c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bf4950>]}
+
+
+============================== 15:15:22.773212 | 7d47e6f6-1c51-4e96-8b8c-3693eee3cfc5 ==============================
+[0m15:15:22.773212 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:15:22.773544 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m15:15:23.451164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7d47e6f6-1c51-4e96-8b8c-3693eee3cfc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12adca5a0>]}
+[0m15:15:23.485473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7d47e6f6-1c51-4e96-8b8c-3693eee3cfc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041d72c0>]}
+[0m15:15:23.485835 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:15:23.572951 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:15:23.631438 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:15:23.631668 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:15:23.649003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7d47e6f6-1c51-4e96-8b8c-3693eee3cfc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12af1f7d0>]}
+[0m15:15:23.682326 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m15:15:23.684248 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m15:15:23.695886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7d47e6f6-1c51-4e96-8b8c-3693eee3cfc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12ec08ec0>]}
+[0m15:15:23.696151 [info ] [MainThread]: Found 2 models, 4 data tests, 489 macros
+[0m15:15:23.696322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7d47e6f6-1c51-4e96-8b8c-3693eee3cfc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12effddc0>]}
+[0m15:15:23.697247 [info ] [MainThread]: 
+[0m15:15:23.697444 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:15:23.697582 [info ] [MainThread]: 
+[0m15:15:23.697834 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:15:23.699661 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_opensource-marketing-dwh'
+[0m15:15:23.699843 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:15:24.047965 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh, now list_opensource-marketing-dwh_dbt_transformations)
+[0m15:15:24.048568 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:15:24.404064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7d47e6f6-1c51-4e96-8b8c-3693eee3cfc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12efddeb0>]}
+[0m15:15:24.405285 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:15:24.408821 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.my_first_dbt_model
+[0m15:15:24.409482 [info ] [Thread-1 (]: 1 of 2 START sql table model dbt_transformations.my_first_dbt_model ............ [RUN]
+[0m15:15:24.409920 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh_dbt_transformations, now model.online_shop_dbt.my_first_dbt_model)
+[0m15:15:24.410257 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.my_first_dbt_model
+[0m15:15:24.420006 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.my_first_dbt_model"
+[0m15:15:24.421445 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.my_first_dbt_model
+[0m15:15:24.486412 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:15:24.847482 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.my_first_dbt_model"
+[0m15:15:24.848830 [debug] [Thread-1 (]: On model.online_shop_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `opensource-marketing-dwh`.`dbt_transformations`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m15:15:25.002683 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:cb7101bd-0abb-446d-84e4-7378c84668fa&page=queryresults
+[0m15:15:25.004091 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:cb7101bd-0abb-446d-84e4-7378c84668fa&page=queryresults
+[0m15:15:25.015207 [debug] [Thread-1 (]: Database Error in model my_first_dbt_model (online_shop_dbt/models/example/my_first_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_first_dbt_model.sql
+[0m15:15:25.017388 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7d47e6f6-1c51-4e96-8b8c-3693eee3cfc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104534ce0>]}
+[0m15:15:25.018120 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model dbt_transformations.my_first_dbt_model ... [[31mERROR[0m in 0.61s]
+[0m15:15:25.019225 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.my_first_dbt_model
+[0m15:15:25.019692 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.my_second_dbt_model
+[0m15:15:25.020228 [debug] [Thread-4 (]: Marking all children of 'model.online_shop_dbt.my_first_dbt_model' to be skipped because of status 'error'.  Reason: Database Error in model my_first_dbt_model (online_shop_dbt/models/example/my_first_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_first_dbt_model.sql.
+[0m15:15:25.020816 [info ] [Thread-1 (]: 2 of 2 START sql view model dbt_transformations.my_second_dbt_model ............ [RUN]
+[0m15:15:25.022276 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.my_first_dbt_model, now model.online_shop_dbt.my_second_dbt_model)
+[0m15:15:25.022686 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.my_second_dbt_model
+[0m15:15:25.025017 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.my_second_dbt_model"
+[0m15:15:25.026160 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.my_second_dbt_model
+[0m15:15:25.046224 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.my_second_dbt_model"
+[0m15:15:25.047064 [debug] [Thread-1 (]: On model.online_shop_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.my_second_dbt_model"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `facebook_ads_dimensions.ads`;
+
+
+[0m15:15:25.047438 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:15:25.347215 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:3dd17631-f7d3-48f8-ac58-57dc9000f869&page=queryresults
+[0m15:15:25.348806 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:3dd17631-f7d3-48f8-ac58-57dc9000f869&page=queryresults
+[0m15:15:25.354121 [debug] [Thread-1 (]: Database Error in model my_second_dbt_model (online_shop_dbt/models/example/my_second_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_second_dbt_model.sql
+[0m15:15:25.354774 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7d47e6f6-1c51-4e96-8b8c-3693eee3cfc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12ae38b30>]}
+[0m15:15:25.355437 [error] [Thread-1 (]: 2 of 2 ERROR creating sql view model dbt_transformations.my_second_dbt_model ... [[31mERROR[0m in 0.33s]
+[0m15:15:25.356066 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.my_second_dbt_model
+[0m15:15:25.356570 [debug] [Thread-4 (]: Marking all children of 'model.online_shop_dbt.my_second_dbt_model' to be skipped because of status 'error'.  Reason: Database Error in model my_second_dbt_model (online_shop_dbt/models/example/my_second_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_second_dbt_model.sql.
+[0m15:15:25.357420 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:15:25.358836 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:15:25.359158 [debug] [MainThread]: Connection 'model.online_shop_dbt.my_second_dbt_model' was properly closed.
+[0m15:15:25.359461 [info ] [MainThread]: 
+[0m15:15:25.359755 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 1.66 seconds (1.66s).
+[0m15:15:25.360482 [debug] [MainThread]: Command end result
+[0m15:15:25.383014 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m15:15:25.384713 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m15:15:25.389878 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/run_results.json
+[0m15:15:25.390164 [info ] [MainThread]: 
+[0m15:15:25.390552 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m15:15:25.390966 [info ] [MainThread]: 
+[0m15:15:25.391418 [error] [MainThread]:   Database Error in model my_first_dbt_model (online_shop_dbt/models/example/my_first_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_first_dbt_model.sql
+[0m15:15:25.391748 [info ] [MainThread]: 
+[0m15:15:25.392155 [error] [MainThread]:   Database Error in model my_second_dbt_model (online_shop_dbt/models/example/my_second_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_second_dbt_model.sql
+[0m15:15:25.392427 [info ] [MainThread]: 
+[0m15:15:25.392688 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+[0m15:15:25.395408 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.6647112, "process_in_blocks": "0", "process_kernel_time": 0.240253, "process_mem_max_rss": "206536704", "process_out_blocks": "0", "process_user_time": 1.688085}
+[0m15:15:25.395747 [debug] [MainThread]: Command `dbt run` failed at 15:15:25.395680 after 2.67 seconds
+[0m15:15:25.396017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bf4aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bf4a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bf4b00>]}
+[0m15:15:25.396289 [debug] [MainThread]: Flushing usage events
+[0m15:15:25.839254 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:23:21.510741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f69760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108edc920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10910c8f0>]}
+
+
+============================== 15:23:21.514568 | a9e2fa1a-4b9d-44d5-b6ed-6abf6f91ae84 ==============================
+[0m15:23:21.514568 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:23:21.517577 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:23:22.184365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a9e2fa1a-4b9d-44d5-b6ed-6abf6f91ae84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10edfc800>]}
+[0m15:23:22.220123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a9e2fa1a-4b9d-44d5-b6ed-6abf6f91ae84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f0d19a0>]}
+[0m15:23:22.220474 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:23:22.308285 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:23:22.360855 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:23:22.361085 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:23:22.378589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a9e2fa1a-4b9d-44d5-b6ed-6abf6f91ae84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f2b7800>]}
+[0m15:23:22.411602 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m15:23:22.414599 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m15:23:22.426786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a9e2fa1a-4b9d-44d5-b6ed-6abf6f91ae84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f4911f0>]}
+[0m15:23:22.427051 [info ] [MainThread]: Found 3 models, 4 data tests, 489 macros
+[0m15:23:22.427227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a9e2fa1a-4b9d-44d5-b6ed-6abf6f91ae84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f4daa20>]}
+[0m15:23:22.428186 [info ] [MainThread]: 
+[0m15:23:22.428364 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:23:22.428504 [info ] [MainThread]: 
+[0m15:23:22.428757 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:23:22.430640 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_opensource-marketing-dwh'
+[0m15:23:22.430850 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:23:22.788334 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh, now list_opensource-marketing-dwh_dbt_transformations)
+[0m15:23:22.789514 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:23:23.142497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a9e2fa1a-4b9d-44d5-b6ed-6abf6f91ae84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074b0320>]}
+[0m15:23:23.143504 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:23:23.147508 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.my_first_dbt_model
+[0m15:23:23.148243 [info ] [Thread-1 (]: 1 of 3 START sql table model dbt_transformations.my_first_dbt_model ............ [RUN]
+[0m15:23:23.148705 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh_dbt_transformations, now model.online_shop_dbt.my_first_dbt_model)
+[0m15:23:23.149063 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.my_first_dbt_model
+[0m15:23:23.217592 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.my_first_dbt_model"
+[0m15:23:23.219581 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.my_first_dbt_model
+[0m15:23:23.228250 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:23:23.577564 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.my_first_dbt_model"
+[0m15:23:23.579745 [debug] [Thread-1 (]: On model.online_shop_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `opensource-marketing-dwh`.`dbt_transformations`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m15:23:23.751543 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:a5d4c5f5-c6d6-4328-9a2c-13a067e9c5a5&page=queryresults
+[0m15:23:23.753144 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:a5d4c5f5-c6d6-4328-9a2c-13a067e9c5a5&page=queryresults
+[0m15:23:23.764092 [debug] [Thread-1 (]: Database Error in model my_first_dbt_model (online_shop_dbt/models/example/my_first_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_first_dbt_model.sql
+[0m15:23:23.766695 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a9e2fa1a-4b9d-44d5-b6ed-6abf6f91ae84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f336420>]}
+[0m15:23:23.767525 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model dbt_transformations.my_first_dbt_model ... [[31mERROR[0m in 0.62s]
+[0m15:23:23.768132 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.my_first_dbt_model
+[0m15:23:23.768538 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.my_second_dbt_model
+[0m15:23:23.769035 [debug] [Thread-4 (]: Marking all children of 'model.online_shop_dbt.my_first_dbt_model' to be skipped because of status 'error'.  Reason: Database Error in model my_first_dbt_model (online_shop_dbt/models/example/my_first_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_first_dbt_model.sql.
+[0m15:23:23.769550 [info ] [Thread-1 (]: 2 of 3 START sql view model dbt_transformations.my_second_dbt_model ............ [RUN]
+[0m15:23:23.770630 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.my_first_dbt_model, now model.online_shop_dbt.my_second_dbt_model)
+[0m15:23:23.770900 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.my_second_dbt_model
+[0m15:23:23.772644 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.my_second_dbt_model"
+[0m15:23:23.773517 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.my_second_dbt_model
+[0m15:23:23.793649 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.my_second_dbt_model"
+[0m15:23:23.794455 [debug] [Thread-1 (]: On model.online_shop_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.my_second_dbt_model"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `facebook_ads_dimensions.ads`;
+
+
+[0m15:23:23.794822 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:23:24.106980 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:534941ab-e3cb-4ee4-93ca-15a139cac906&page=queryresults
+[0m15:23:24.108567 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:534941ab-e3cb-4ee4-93ca-15a139cac906&page=queryresults
+[0m15:23:24.114586 [debug] [Thread-1 (]: Database Error in model my_second_dbt_model (online_shop_dbt/models/example/my_second_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_second_dbt_model.sql
+[0m15:23:24.115369 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a9e2fa1a-4b9d-44d5-b6ed-6abf6f91ae84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f76d670>]}
+[0m15:23:24.116030 [error] [Thread-1 (]: 2 of 3 ERROR creating sql view model dbt_transformations.my_second_dbt_model ... [[31mERROR[0m in 0.34s]
+[0m15:23:24.116603 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.my_second_dbt_model
+[0m15:23:24.116995 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.testing
+[0m15:23:24.117455 [debug] [Thread-4 (]: Marking all children of 'model.online_shop_dbt.my_second_dbt_model' to be skipped because of status 'error'.  Reason: Database Error in model my_second_dbt_model (online_shop_dbt/models/example/my_second_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_second_dbt_model.sql.
+[0m15:23:24.117955 [info ] [Thread-1 (]: 3 of 3 START sql view model dbt_transformations.testing ........................ [RUN]
+[0m15:23:24.118590 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.my_second_dbt_model, now model.online_shop_dbt.testing)
+[0m15:23:24.118955 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.testing
+[0m15:23:24.121394 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.testing"
+[0m15:23:24.122443 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.testing
+[0m15:23:24.124710 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.testing"
+[0m15:23:24.125290 [debug] [Thread-1 (]: On model.online_shop_dbt.testing: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.testing"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations`.`testing`
+  OPTIONS()
+  as SELECT 1 AS test_id;
+
+
+[0m15:23:24.125564 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:23:24.465077 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:f2f47df7-bc9e-4fab-86bf-0e6409576fb9&page=queryresults
+[0m15:23:24.466376 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:f2f47df7-bc9e-4fab-86bf-0e6409576fb9&page=queryresults
+[0m15:23:24.472659 [debug] [Thread-1 (]: Database Error in model testing (online_shop_dbt/models/example/testing.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/testing.sql
+[0m15:23:24.473412 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a9e2fa1a-4b9d-44d5-b6ed-6abf6f91ae84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f794e00>]}
+[0m15:23:24.474142 [error] [Thread-1 (]: 3 of 3 ERROR creating sql view model dbt_transformations.testing ............... [[31mERROR[0m in 0.35s]
+[0m15:23:24.474739 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.testing
+[0m15:23:24.475201 [debug] [Thread-4 (]: Marking all children of 'model.online_shop_dbt.testing' to be skipped because of status 'error'.  Reason: Database Error in model testing (online_shop_dbt/models/example/testing.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/testing.sql.
+[0m15:23:24.476403 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:23:24.478264 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:23:24.478604 [debug] [MainThread]: Connection 'model.online_shop_dbt.testing' was properly closed.
+[0m15:23:24.478953 [info ] [MainThread]: 
+[0m15:23:24.479258 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 2.05 seconds (2.05s).
+[0m15:23:24.480886 [debug] [MainThread]: Command end result
+[0m15:23:24.505106 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m15:23:24.506592 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m15:23:24.511636 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/run_results.json
+[0m15:23:24.511987 [info ] [MainThread]: 
+[0m15:23:24.512685 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m15:23:24.513016 [info ] [MainThread]: 
+[0m15:23:24.513350 [error] [MainThread]:   Database Error in model my_first_dbt_model (online_shop_dbt/models/example/my_first_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_first_dbt_model.sql
+[0m15:23:24.513606 [info ] [MainThread]: 
+[0m15:23:24.513887 [error] [MainThread]:   Database Error in model my_second_dbt_model (online_shop_dbt/models/example/my_second_dbt_model.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/my_second_dbt_model.sql
+[0m15:23:24.514117 [info ] [MainThread]: 
+[0m15:23:24.514364 [error] [MainThread]:   Database Error in model testing (online_shop_dbt/models/example/testing.sql)
+  Not found: Dataset opensource-marketing-dwh:dbt_transformations was not found in location europe-west1
+  compiled code at target/run/online_shop_dbt/online_shop_dbt/models/example/testing.sql
+[0m15:23:24.514560 [info ] [MainThread]: 
+[0m15:23:24.514779 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=0 TOTAL=3
+[0m15:23:24.517279 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.0485942, "process_in_blocks": "0", "process_kernel_time": 0.253898, "process_mem_max_rss": "206733312", "process_out_blocks": "0", "process_user_time": 1.77686}
+[0m15:23:24.517620 [debug] [MainThread]: Command `dbt run` failed at 15:23:24.517551 after 3.05 seconds
+[0m15:23:24.517911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eafd2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10854f5c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a508f0>]}
+[0m15:23:24.518186 [debug] [MainThread]: Flushing usage events
+[0m15:23:24.980712 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:24:37.841216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x122057c80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1221f8a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1221f87d0>]}
+
+
+============================== 15:24:37.844511 | 015f3cbc-7122-4cfe-8932-8c8b64479012 ==============================
+[0m15:24:37.844511 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:24:37.844840 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m15:24:38.523434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '015f3cbc-7122-4cfe-8932-8c8b64479012', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13aeb7320>]}
+[0m15:24:38.557891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '015f3cbc-7122-4cfe-8932-8c8b64479012', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13adc7770>]}
+[0m15:24:38.558230 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:24:38.648379 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:24:38.708841 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:24:38.709079 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:24:38.726624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '015f3cbc-7122-4cfe-8932-8c8b64479012', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b0927e0>]}
+[0m15:24:38.760036 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m15:24:38.762109 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m15:24:38.773947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '015f3cbc-7122-4cfe-8932-8c8b64479012', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b2f4c20>]}
+[0m15:24:38.774201 [info ] [MainThread]: Found 3 models, 4 data tests, 489 macros
+[0m15:24:38.774374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '015f3cbc-7122-4cfe-8932-8c8b64479012', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b0794c0>]}
+[0m15:24:38.775290 [info ] [MainThread]: 
+[0m15:24:38.775464 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:24:38.775602 [info ] [MainThread]: 
+[0m15:24:38.775864 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:24:38.777724 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_opensource-marketing-dwh'
+[0m15:24:38.777936 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:24:39.127285 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh, now create_opensource-marketing-dwh_dbt_transformations)
+[0m15:24:39.128006 [debug] [ThreadPool]: Creating schema "database: "opensource-marketing-dwh"
+schema: "dbt_transformations"
+"
+[0m15:24:39.197099 [debug] [ThreadPool]: On create_opensource-marketing-dwh_dbt_transformations: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "connection_name": "create_opensource-marketing-dwh_dbt_transformations"} */
+create schema if not exists `opensource-marketing-dwh`.`dbt_transformations`
+  
+[0m15:24:39.197404 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:24:39.531356 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:14123939-63e5-4f1b-afde-17cdd1d91e95&page=queryresults
+[0m15:24:41.802279 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_opensource-marketing-dwh_dbt_transformations, now list_opensource-marketing-dwh_dbt_transformations)
+[0m15:24:41.802688 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:24:42.133404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '015f3cbc-7122-4cfe-8932-8c8b64479012', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b51a3f0>]}
+[0m15:24:42.135090 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:24:42.138924 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.my_first_dbt_model
+[0m15:24:42.139589 [info ] [Thread-1 (]: 1 of 3 START sql table model dbt_transformations.my_first_dbt_model ............ [RUN]
+[0m15:24:42.140048 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh_dbt_transformations, now model.online_shop_dbt.my_first_dbt_model)
+[0m15:24:42.140419 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.my_first_dbt_model
+[0m15:24:42.149097 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.my_first_dbt_model"
+[0m15:24:42.150657 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.my_first_dbt_model
+[0m15:24:42.184321 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.my_first_dbt_model"
+[0m15:24:42.185069 [debug] [Thread-1 (]: On model.online_shop_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `opensource-marketing-dwh`.`dbt_transformations`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m15:24:42.185418 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:24:42.653301 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:97f27cb5-1fed-4ec8-9bfd-63c5cd90edf3&page=queryresults
+[0m15:24:44.175405 [error] [Thread-1 (]: [31mUnhandled error while executing target/run/online_shop_dbt/online_shop_dbt/models/example/my_first_dbt_model.sql[0m
+404 GET https://bigquery.googleapis.com/bigquery/v2/projects/opensource-marketing-dwh/datasets/dbt_transformations/tables/my_first_dbt_model?prettyPrint=false: Not found: Dataset opensource-marketing-dwh:dbt_transformations
+[0m15:24:44.186460 [debug] [Thread-1 (]: Traceback (most recent call last):
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/dbt/task/base.py", line 308, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/dbt/task/base.py", line 408, in run
+    return self.execute(compiled_node, manifest)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/dbt/task/run.py", line 332, in execute
+    return self._execute_model(hook_ctx, context_config, model, context, materialization_macro)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/dbt/task/run.py", line 292, in _execute_model
+    result = MacroGenerator(
+             ^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 323, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 89, in macro
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 323, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 52, in macro
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/dbt/adapters/base/impl.py", line 399, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/dbt/adapters/bigquery/connections.py", line 311, in execute
+    query_table = client.get_table(query_job.destination)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/google/cloud/bigquery/client.py", line 1164, in get_table
+    api_response = self._call_api(
+                   ^^^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/google/cloud/bigquery/client.py", line 837, in _call_api
+    return call()
+           ^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/google/api_core/retry/retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 144, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/online_shop_venv/lib/python3.12/site-packages/google/cloud/_http/__init__.py", line 494, in api_request
+    raise exceptions.from_http_response(response)
+google.api_core.exceptions.NotFound: 404 GET https://bigquery.googleapis.com/bigquery/v2/projects/opensource-marketing-dwh/datasets/dbt_transformations/tables/my_first_dbt_model?prettyPrint=false: Not found: Dataset opensource-marketing-dwh:dbt_transformations
+
+[0m15:24:44.189158 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '015f3cbc-7122-4cfe-8932-8c8b64479012', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b689b50>]}
+[0m15:24:44.189912 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model dbt_transformations.my_first_dbt_model ... [[31mERROR[0m in 2.05s]
+[0m15:24:44.191022 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.my_first_dbt_model
+[0m15:24:44.191566 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.my_second_dbt_model
+[0m15:24:44.192022 [debug] [Thread-4 (]: Marking all children of 'model.online_shop_dbt.my_first_dbt_model' to be skipped because of status 'error'.  Reason: 404 GET https://bigquery.googleapis.com/bigquery/v2/projects/opensource-marketing-dwh/datasets/dbt_transformations/tables/my_first_dbt_model?prettyPrint=false: Not found: Dataset opensource-marketing-dwh:dbt_transformations.
+[0m15:24:44.192560 [info ] [Thread-1 (]: 2 of 3 START sql view model dbt_transformations.my_second_dbt_model ............ [RUN]
+[0m15:24:44.193934 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.my_first_dbt_model, now model.online_shop_dbt.my_second_dbt_model)
+[0m15:24:44.194847 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.my_second_dbt_model
+[0m15:24:44.197269 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.my_second_dbt_model"
+[0m15:24:44.198025 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.my_second_dbt_model
+[0m15:24:44.219629 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.my_second_dbt_model"
+[0m15:24:44.220441 [debug] [Thread-1 (]: On model.online_shop_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.my_second_dbt_model"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `facebook_ads_dimensions.ads`;
+
+
+[0m15:24:44.220790 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:24:44.745132 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:cb14efee-da05-4667-9ee9-6f609004727d&page=queryresults
+[0m15:24:45.040988 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '015f3cbc-7122-4cfe-8932-8c8b64479012', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13ad59a60>]}
+[0m15:24:45.041550 [info ] [Thread-1 (]: 2 of 3 OK created sql view model dbt_transformations.my_second_dbt_model ....... [[32mCREATE VIEW (0 processed)[0m in 0.85s]
+[0m15:24:45.041987 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.my_second_dbt_model
+[0m15:24:45.042274 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.testing
+[0m15:24:45.042681 [info ] [Thread-1 (]: 3 of 3 START sql view model dbt_transformations.testing ........................ [RUN]
+[0m15:24:45.043061 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.my_second_dbt_model, now model.online_shop_dbt.testing)
+[0m15:24:45.043339 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.testing
+[0m15:24:45.044956 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.testing"
+[0m15:24:45.045516 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.testing
+[0m15:24:45.047607 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.testing"
+[0m15:24:45.048192 [debug] [Thread-1 (]: On model.online_shop_dbt.testing: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.testing"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations`.`testing`
+  OPTIONS()
+  as SELECT 1 AS test_id;
+
+
+[0m15:24:45.048497 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:24:45.564615 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:a8f85a20-8cab-4e95-9b20-97a12323c909&page=queryresults
+[0m15:24:45.778639 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '015f3cbc-7122-4cfe-8932-8c8b64479012', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13d323410>]}
+[0m15:24:45.780036 [info ] [Thread-1 (]: 3 of 3 OK created sql view model dbt_transformations.testing ................... [[32mCREATE VIEW (0 processed)[0m in 0.74s]
+[0m15:24:45.780956 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.testing
+[0m15:24:45.782125 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:24:45.783903 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:24:45.784239 [debug] [MainThread]: Connection 'model.online_shop_dbt.testing' was properly closed.
+[0m15:24:45.784745 [info ] [MainThread]: 
+[0m15:24:45.785177 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 7.01 seconds (7.01s).
+[0m15:24:45.786418 [debug] [MainThread]: Command end result
+[0m15:24:45.812009 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m15:24:45.813643 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m15:24:45.819295 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/run_results.json
+[0m15:24:45.819643 [info ] [MainThread]: 
+[0m15:24:45.819948 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:24:45.820198 [info ] [MainThread]: 
+[0m15:24:45.820504 [error] [MainThread]:   404 GET https://bigquery.googleapis.com/bigquery/v2/projects/opensource-marketing-dwh/datasets/dbt_transformations/tables/my_first_dbt_model?prettyPrint=false: Not found: Dataset opensource-marketing-dwh:dbt_transformations
+[0m15:24:45.820742 [info ] [MainThread]: 
+[0m15:24:45.820984 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+[0m15:24:45.823690 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 8.024133, "process_in_blocks": "0", "process_kernel_time": 0.282704, "process_mem_max_rss": "211337216", "process_out_blocks": "0", "process_user_time": 1.875559}
+[0m15:24:45.824023 [debug] [MainThread]: Command `dbt run` failed at 15:24:45.823956 after 8.02 seconds
+[0m15:24:45.824302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1216c9a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13adc5be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13aedbc20>]}
+[0m15:24:45.824564 [debug] [MainThread]: Flushing usage events
+[0m15:24:46.293416 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:26:22.215009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1120570e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1121f8aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1121f87d0>]}
+
+
+============================== 15:26:22.218195 | 397449bf-f608-40d7-8ac4-3590b423fdcc ==============================
+[0m15:26:22.218195 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:26:22.218527 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m15:26:22.924447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '397449bf-f608-40d7-8ac4-3590b423fdcc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x144a809e0>]}
+[0m15:26:22.958633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '397449bf-f608-40d7-8ac4-3590b423fdcc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c05f70>]}
+[0m15:26:22.958981 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m15:26:23.049413 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m15:26:23.104043 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:26:23.104269 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:26:23.121946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '397449bf-f608-40d7-8ac4-3590b423fdcc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x144b22150>]}
+[0m15:26:23.155757 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m15:26:23.157613 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m15:26:23.169215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '397449bf-f608-40d7-8ac4-3590b423fdcc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x144f016d0>]}
+[0m15:26:23.169479 [info ] [MainThread]: Found 3 models, 4 data tests, 489 macros
+[0m15:26:23.169652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '397449bf-f608-40d7-8ac4-3590b423fdcc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x144efe3c0>]}
+[0m15:26:23.170593 [info ] [MainThread]: 
+[0m15:26:23.170776 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:26:23.170916 [info ] [MainThread]: 
+[0m15:26:23.171164 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:26:23.173005 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_opensource-marketing-dwh'
+[0m15:26:23.173208 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:26:23.534876 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh, now create_opensource-marketing-dwh_dbt_transformations_new)
+[0m15:26:23.536399 [debug] [ThreadPool]: Creating schema "database: "opensource-marketing-dwh"
+schema: "dbt_transformations_new"
+"
+[0m15:26:23.606812 [debug] [ThreadPool]: On create_opensource-marketing-dwh_dbt_transformations_new: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "connection_name": "create_opensource-marketing-dwh_dbt_transformations_new"} */
+create schema if not exists `opensource-marketing-dwh`.`dbt_transformations_new`
+  
+[0m15:26:23.607152 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:26:23.956772 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:8005f992-0f19-4326-b19a-3d589538d329&page=queryresults
+[0m15:26:26.162848 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_opensource-marketing-dwh_dbt_transformations_new, now list_opensource-marketing-dwh_dbt_transformations_new)
+[0m15:26:26.163268 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:26:26.489516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '397449bf-f608-40d7-8ac4-3590b423fdcc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1448c6330>]}
+[0m15:26:26.490546 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:26:26.587830 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.my_first_dbt_model
+[0m15:26:26.588964 [info ] [Thread-1 (]: 1 of 3 START sql table model dbt_transformations_new.my_first_dbt_model ........ [RUN]
+[0m15:26:26.589590 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh_dbt_transformations_new, now model.online_shop_dbt.my_first_dbt_model)
+[0m15:26:26.589888 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.my_first_dbt_model
+[0m15:26:26.621618 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.my_first_dbt_model"
+[0m15:26:26.628992 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.my_first_dbt_model
+[0m15:26:26.654992 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.my_first_dbt_model"
+[0m15:26:26.655598 [debug] [Thread-1 (]: On model.online_shop_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `opensource-marketing-dwh`.`dbt_transformations_new`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m15:26:26.655857 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:26:27.147583 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:fdab731e-24c2-4a5c-974b-d77b32dc22ad&page=queryresults
+[0m15:26:28.664057 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '397449bf-f608-40d7-8ac4-3590b423fdcc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x144855b20>]}
+[0m15:26:28.664831 [info ] [Thread-1 (]: 1 of 3 OK created sql table model dbt_transformations_new.my_first_dbt_model ... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 2.07s]
+[0m15:26:28.665289 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.my_first_dbt_model
+[0m15:26:28.665569 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.my_second_dbt_model
+[0m15:26:28.665975 [info ] [Thread-1 (]: 2 of 3 START sql view model dbt_transformations_new.my_second_dbt_model ........ [RUN]
+[0m15:26:28.666425 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.my_first_dbt_model, now model.online_shop_dbt.my_second_dbt_model)
+[0m15:26:28.666775 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.my_second_dbt_model
+[0m15:26:28.670401 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.my_second_dbt_model"
+[0m15:26:28.670953 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.my_second_dbt_model
+[0m15:26:28.694093 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.my_second_dbt_model"
+[0m15:26:28.694835 [debug] [Thread-1 (]: On model.online_shop_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.my_second_dbt_model"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations_new`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `facebook_ads_dimensions.ads`;
+
+
+[0m15:26:28.695187 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:26:29.243621 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:9884a3c0-caae-48ac-9cd0-384fb2681da5&page=queryresults
+[0m15:26:29.573656 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '397449bf-f608-40d7-8ac4-3590b423fdcc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x144e66a20>]}
+[0m15:26:29.574701 [info ] [Thread-1 (]: 2 of 3 OK created sql view model dbt_transformations_new.my_second_dbt_model ... [[32mCREATE VIEW (0 processed)[0m in 0.91s]
+[0m15:26:29.575335 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.my_second_dbt_model
+[0m15:26:29.575748 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.testing
+[0m15:26:29.576281 [info ] [Thread-1 (]: 3 of 3 START sql view model dbt_transformations_new.testing .................... [RUN]
+[0m15:26:29.576765 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.my_second_dbt_model, now model.online_shop_dbt.testing)
+[0m15:26:29.577114 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.testing
+[0m15:26:29.579640 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.testing"
+[0m15:26:29.581085 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.testing
+[0m15:26:29.583889 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.testing"
+[0m15:26:29.584577 [debug] [Thread-1 (]: On model.online_shop_dbt.testing: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.testing"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations_new`.`testing`
+  OPTIONS()
+  as SELECT 1 AS test_id;
+
+
+[0m15:26:29.584959 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:26:29.942597 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:527df28c-f708-47f3-9aed-6c045a7aa76d&page=queryresults
+[0m15:26:30.266108 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '397449bf-f608-40d7-8ac4-3590b423fdcc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1459cff20>]}
+[0m15:26:30.266659 [info ] [Thread-1 (]: 3 of 3 OK created sql view model dbt_transformations_new.testing ............... [[32mCREATE VIEW (0 processed)[0m in 0.69s]
+[0m15:26:30.267088 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.testing
+[0m15:26:30.267839 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:26:30.269192 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:26:30.269422 [debug] [MainThread]: Connection 'model.online_shop_dbt.testing' was properly closed.
+[0m15:26:30.269685 [info ] [MainThread]: 
+[0m15:26:30.269914 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 7.10 seconds (7.10s).
+[0m15:26:30.270575 [debug] [MainThread]: Command end result
+[0m15:26:30.286140 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m15:26:30.287434 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m15:26:30.291619 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/run_results.json
+[0m15:26:30.291924 [info ] [MainThread]: 
+[0m15:26:30.292447 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:26:30.292713 [info ] [MainThread]: 
+[0m15:26:30.292987 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m15:26:30.295340 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.122083, "process_in_blocks": "0", "process_kernel_time": 0.28482, "process_mem_max_rss": "206225408", "process_out_blocks": "0", "process_user_time": 1.8784}
+[0m15:26:30.295682 [debug] [MainThread]: Command `dbt run` succeeded at 15:26:30.295625 after 8.12 seconds
+[0m15:26:30.295926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1121f8860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1121f8890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1121f8aa0>]}
+[0m15:26:30.296151 [debug] [MainThread]: Flushing usage events
+[0m15:26:30.745595 [debug] [MainThread]: An error was encountered while trying to flush usage events

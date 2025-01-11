@@ -2,7 +2,7 @@
   
     
 
-    create or replace table `opensource-marketing-dwh`.`dbt_transformations`.`my_first_dbt_model`
+    create or replace table `opensource-marketing-dwh`.`dbt_transformations_new`.`my_first_dbt_model`
       
     
     
