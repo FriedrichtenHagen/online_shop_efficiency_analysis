@@ -1,1 +1,0 @@
-SELECT * FROM opensource-marketing-dwh.facebook_ads_dimensions.ad_sets

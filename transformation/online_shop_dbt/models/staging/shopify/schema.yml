@@ -1,0 +1,78 @@
+
+version: 2
+
+models:
+  - name: stg_shopify__orders
+    description: "staging the orders table"
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        data_tests:
+          - not_null
+      - name: total_discounts
+      - name: total_line_items_price
+      - name: total_price
+      - name: total_shipping_price
+      - name: total_subtotal_price
+      - name: total_tax
+      - name: created_at
+      - name: cancelled_at
+      - name: closed_at
+      - name: processed_at
+      - name: updated_at
+      - name: discount_application_allocation_method
+      - name: discount_application_code
+      - name: discount_application_target_selection
+      - name: discount_application_target_type
+      - name: discount_application_type
+      - name: discount_application_value
+      - name: discount_application_value_type
+      - name: discount_application_title
+      - name: discount_application_description
+      - name: discount_code_amount
+      - name: discount_code_code
+      - name: discount_code_type
+      - name: landing_site
+      - name: order_adjustment_amount
+      - name: order_adjustment_id
+      - name: order_adjustment_uid
+      - name: order_adjustment_kind
+      - name: order_adjustment_reason
+      - name: order_adjustment_refund_id
+      - name: order_adjustment_refund_uid
+      - name: order_adjustment_tax_amount
+      - name: payment_gateway_names
+      - name: presentment_currency
+      - name: referring_site
+      - name: refund_line_item_created_at
+      - name: refund_line_item_order_line_item_id
+      - name: refund_line_item_processed_at
+      - name: refund_line_item_quantity
+      - name: refund_line_item_refund_id
+      - name: refund_line_item_refund_line_item_id
+      - name: refund_line_item_restock
+      - name: refund_line_item_restock_type
+      - name: refund_transactions_id
+      - name: refund_transactions_amount
+      - name: refund_transactions_created_at
+      - name: refund_transactions_kind
+      - name: refund_transactions_status
+      - name: shipping_line_discount_allocations_index
+      - name: shipping_line_discount_amount
+      - name: shipping_line_discounted_price
+      - name: shipping_line_id
+      - name: shipping_line_uid
+      - name: shipping_line_price
+      - name: shipping_line_source
+      - name: shipping_line_tax_lines_price
+      - name: shipping_line_tax_lines_rate
+      - name: shipping_line_tax_lines_title
+      - name: shipping_line_title
+      - name: tax_line_price
+      - name: tax_line_rate
+      - name: tax_line_title
+      - name: taxes_included
+      - name: test
