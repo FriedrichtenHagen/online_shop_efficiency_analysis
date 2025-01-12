@@ -137,11 +137,45 @@ joined_discounts AS (
     FROM orders
     LEFT JOIN discounts
     ON orders.order_id = discounts.order_id
+),
+
+-- refunds are joined to the order that is refunded
+joined_refunds AS (
+    SELECT
+        joined_discounts.order_id,
+        joined_discounts.customer_id,
+        joined_discounts.total_discounts,
+        joined_discounts.total_line_items_price,
+        joined_discounts.total_price,
+        joined_discounts.total_shipping_price,
+        joined_discounts.total_subtotal_price,
+        joined_discounts.total_tax,
+        joined_discounts.taxes_included,
+        joined_discounts.created_at,
+        joined_discounts.cancelled_at,
+        joined_discounts.closed_at,
+        joined_discounts.processed_at,
+        joined_discounts.updated_at,
+        -- discounts
+        joined_discounts.discount_code_code,
+        -- there are different kinds of discounts. Shipping discounts are only subtracted from shipping!
+        joined_discounts.shipping_discount,
+        joined_discounts.line_item_discount,
+
+        -- refunds
+        refunds.refund_transactions_id,
+        refunds.refund_transactions_amount,
+        refunds.refund_transactions_created_at,
+        refunds.refund_transactions_kind,
+        refunds.refund_transactions_status
+    FROM joined_discounts
+    LEFT JOIN refunds
+        ON joined_discounts.order_id = refunds.order_id
 )
 
 
 -- coalesce joined columns
--- create cte for business logic
+-- create cte or mart? for klar business logic
 
 -- Klar Definition: Net Revenue = Gross Revenue - Taxes - Refund Value
 
@@ -158,4 +192,4 @@ joined_discounts AS (
 
 -- total_price is what the customer pays
 -- total_price = total_line_items_price - total_discounts + total_shipping_price + total_tax
-SELECT * FROM joined_discounts
+SELECT * FROM joined_refunds
