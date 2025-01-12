@@ -76,18 +76,55 @@ WITH int_shopify__orders AS (
         taxes_included,
         test
     FROM {{ ref('int_shopify__orders')}}
+),
+
+-- if discount_application_target_type = shipping_line, then the discount is only subtracted from the shipping!
+discounts AS (
+    SELECT
+        order_id,
+        discount_application_target_type,
+        discount_application_allocation_method,
+        discount_application_code,
+        discount_application_target_selection,
+        discount_application_type,
+        discount_application_value,
+
+        discount_application_value_type,
+        discount_application_title,
+        discount_application_description,
+        discount_code_code,
+        discount_code_type,
+        discount_code_amount,
+    FROM {{ ref('int_shopify__order_discount')}}
+),
+
+-- should a refunded shipping be subtracted from our net revenue? Does net rev include shipping? 
+refunds AS (
+    SELECT
+        order_id,
+        -- refunds
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status
+    FROM {{ ref('int_shopify__order_refund')}}
 )
 
 -- total_subtotal_price = total_line_items_price - total_discounts
 
+-- Klar Net Revenue = Gross Revenue - Taxes - Refund Value
 -- calculating net_revenue:
 --                  total_line_items_price
---                  - total_discounts
+--                  - total_discounts (careful! This is only valid for discount_application_target_type != shipping_line. See order_id = 6064341483866 for an example.)
 --                  ----------------
 --                  = total_subtotal_price 
 --                      + total_shipping_price
---                      - returns/refunds
---                      -----------------
---                      = net_revenue
+                        -----------------                    
+--                          - returns/refunds
+--                          -----------------
+--                          = net_revenue
 
+-- total_price is what the customer pays
+-- total_price = total_line_items_price - total_discounts + total_shipping_price + total_tax
 SELECT * FROM int_shopify__orders
