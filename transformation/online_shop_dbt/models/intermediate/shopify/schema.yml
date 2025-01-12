@@ -202,3 +202,110 @@ models:
       - name: test
         data_type: boolean
         quote: true
+  - name: int_shopify__order_discount
+    columns:
+      - name: order_id
+        data_type: int64
+        data_tests:
+          - not_null
+        quote: true
+      - name: customer_id
+        data_type: int64
+        quote: true
+      - name: total_line_items_price
+        data_type: float64
+        quote: true
+      - name: total_discounts
+        data_type: float64
+        quote: true
+      - name: total_subtotal_price
+        data_type: float64
+        quote: true
+      - name: total_shipping_price
+        data_type: float64
+        quote: true
+      - name: total_tax
+        data_type: float64
+        quote: true
+      - name: total_price
+        data_type: float64
+        quote: true
+      - name: discount_application_target_type
+        data_type: string
+        quote: true
+      - name: discount_application_allocation_method
+        data_type: string
+        quote: true
+      - name: discount_application_code
+        data_type: string
+        quote: true
+      - name: discount_application_target_selection
+        data_type: string
+        quote: true
+      - name: discount_application_type
+        data_type: string
+        quote: true
+      - name: discount_application_value
+        data_type: float64
+        quote: true
+      - name: discount_application_value_type
+        data_type: string
+        quote: true
+      - name: discount_application_title
+        data_type: string
+        quote: true
+      - name: discount_application_description
+        data_type: string
+        quote: true
+      - name: discount_code_code
+        data_type: string
+        quote: true
+      - name: discount_code_type
+        data_type: string
+        quote: true
+      - name: discount_code_amount
+        data_type: float64
+        quote: true
+  - name: int_shopify__order_refund
+    columns:
+      - name: order_id
+        data_type: int64
+        data_tests:
+          - not_null
+        quote: true
+      - name: customer_id
+        data_type: int64
+        quote: true
+      - name: total_discounts
+        data_type: float64
+        quote: true
+      - name: total_line_items_price
+        data_type: float64
+        quote: true
+      - name: total_price
+        data_type: float64
+        quote: true
+      - name: total_shipping_price
+        data_type: float64
+        quote: true
+      - name: total_subtotal_price
+        data_type: float64
+        quote: true
+      - name: total_tax
+        data_type: float64
+        quote: true
+      - name: refund_transactions_id
+        data_type: string
+        quote: true
+      - name: refund_transactions_amount
+        data_type: string
+        quote: true
+      - name: refund_transactions_created_at
+        data_type: string
+        quote: true
+      - name: refund_transactions_kind
+        data_type: string
+        quote: true
+      - name: refund_transactions_status
+        data_type: string
+        quote: true

@@ -99,6 +99,7 @@ discounts AS (
 ),
 
 -- should a refunded shipping be subtracted from our net revenue? Does net rev include shipping? 
+-- should refunds be added to the (day of the) order or later to the day of the refund?
 refunds AS (
     SELECT
         order_id,
@@ -112,8 +113,8 @@ refunds AS (
 )
 
 -- total_subtotal_price = total_line_items_price - total_discounts
+-- Klar Definition: Net Revenue = Gross Revenue - Taxes - Refund Value
 
--- Klar Net Revenue = Gross Revenue - Taxes - Refund Value
 -- calculating net_revenue:
 --                  total_line_items_price
 --                  - total_discounts (careful! This is only valid for discount_application_target_type != shipping_line. See order_id = 6064341483866 for an example.)
