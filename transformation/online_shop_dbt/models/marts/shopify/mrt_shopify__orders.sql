@@ -4,7 +4,7 @@ WITH orders AS (
         customer_id,
         total_discounts,
         total_line_items_price,
-        total_price,
+        total_price, -- total_price is what the customer pays
         total_shipping_price,
         total_subtotal_price,
         total_tax,
@@ -130,16 +130,17 @@ joined_discounts AS (
         orders.processed_at,
         orders.updated_at,
         -- discounts
-        discounts.discount_code_code,
+        COALESCE(discounts.discount_code_code, 'NO CODE USED') AS discount_code_code,
         -- there are different kinds of discounts. Shipping discounts are only subtracted from shipping!
-        CASE WHEN discounts.discount_application_target_type = 'shipping_line' THEN discounts.discount_code_amount ELSE 0 END AS shipping_discount,
-        CASE WHEN discounts.discount_application_target_type = 'line_item' THEN discounts.discount_code_amount ELSE 0 END AS line_item_discount
+        COALESCE(CASE WHEN discounts.discount_application_target_type = 'shipping_line' THEN discounts.discount_code_amount ELSE 0 END, 0) AS shipping_discount,
+        COALESCE(CASE WHEN discounts.discount_application_target_type = 'line_item' THEN discounts.discount_code_amount ELSE 0 END, 0) AS line_item_discount
     FROM orders
     LEFT JOIN discounts
     ON orders.order_id = discounts.order_id
 ),
 
 -- refunds are joined to the order that is refunded
+-- Klar associates the return to the date the order was placed, while Shopify to the day the return was logged.
 joined_refunds AS (
     SELECT
         joined_discounts.order_id,
@@ -163,21 +164,18 @@ joined_refunds AS (
         joined_discounts.line_item_discount,
 
         -- refunds
-        refunds.refund_transactions_id,
-        refunds.refund_transactions_amount,
-        refunds.refund_transactions_created_at,
-        refunds.refund_transactions_kind,
-        refunds.refund_transactions_status
+        COALESCE(refunds.refund_transactions_id, 'NO REFUND') AS refund_transactions_id,
+        COALESCE(refunds.refund_transactions_amount, 0) AS refund_transactions_amount,
+        COALESCE(refunds.refund_transactions_created_at, TIMESTAMP '1970-01-01 00:00:00') AS refund_transactions_created_at,
+        COALESCE(refunds.refund_transactions_kind, 'NO REFUND') AS refund_transaction_kind,
+        COALESCE(refunds.refund_transactions_status, 'NO REFUND') AS refund_transactions_status
     FROM joined_discounts
     LEFT JOIN refunds
         ON joined_discounts.order_id = refunds.order_id
 )
+,
 
-
--- coalesce joined columns
--- create cte or mart? for klar business logic
-
--- Klar Definition: Net Revenue = Gross Revenue - Taxes - Refund Value
+-- Klar definition: Net Revenue = Gross Revenue - Taxes - Refund Value
 
 -- calculating net_revenue:
 --                  total_line_items_price
@@ -185,11 +183,33 @@ joined_refunds AS (
 --                  ----------------
 --                  = total_subtotal_price 
 --                      + total_shipping_price
-                        -----------------                    
+--                      -----------------                    
 --                          - returns/refunds
 --                          -----------------
 --                          = net_revenue
 
--- total_price is what the customer pays
--- total_price = total_line_items_price - total_discounts + total_shipping_price + total_tax
-SELECT * FROM joined_refunds
+calculate_net_revenue AS (
+    SELECT
+        *,
+        (total_line_items_price - line_item_discount - shipping_discount - refund_transactions_amount) AS net_revenue
+    FROM joined_refunds
+)
+,
+
+-- show which order this is for each customer
+calculate_nth_order AS (
+    SELECT
+        *,
+        ROW_NUMBER() OVER (PARTITION BY customer_id ORDER BY created_at ASC) AS nth_order
+    FROM calculate_net_revenue
+),
+
+-- flag for quick separation of new customer orders and existing customer orders
+calculate_new_customer_status AS (
+    SELECT
+        *,
+        CASE WHEN nth_order = 1 THEN 1 ELSE 0 END AS new_customer
+    FROM calculate_nth_order
+)
+
+SELECT * FROM calculate_new_customer_status

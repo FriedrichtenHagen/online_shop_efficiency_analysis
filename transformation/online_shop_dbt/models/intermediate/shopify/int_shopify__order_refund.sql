@@ -51,8 +51,8 @@ extract_refunds AS (
         total_tax,
         -- refunds
         CAST(REPLACE(REPLACE(refund_transactions_id, '[', ''), ']', '') AS STRING) AS refund_transactions_id,
-        CAST(REPLACE(REPLACE(refund_transactions_amount, '[', ''), ']', '') AS STRING) AS refund_transactions_amount,
-        CAST(REPLACE(REPLACE(REPLACE(refund_transactions_created_at, '[', ''), ']', ''),  "'", '') AS STRING) AS refund_transactions_created_at,
+        CAST(REPLACE(REPLACE(refund_transactions_amount, '[', ''), ']', '') AS FLOAT64) AS refund_transactions_amount,
+        CAST(REPLACE(REPLACE(REPLACE(refund_transactions_created_at, '[', ''), ']', ''),  "'", '') AS TIMESTAMP) AS refund_transactions_created_at,
         CAST(REPLACE(REPLACE(REPLACE(refund_transactions_kind, '[', ''), ']', ''), "'", '') AS STRING) AS refund_transactions_kind,
         CAST(REPLACE(REPLACE(REPLACE(refund_transactions_status, '[', ''), ']', ''), "'", '') AS STRING) AS refund_transactions_status
     FROM stg_shopify__orders
