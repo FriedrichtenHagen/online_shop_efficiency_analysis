@@ -1,25 +1,31 @@
 ## Objective: 
-Analyse an ecommerce shop using facebook ads and shopify data.
+This project allows you to analyze an ecommerce shop using facebook ads and shopify data.
 
-Extract data from the facebook ads api, transform and model the data for analytics and visualize in a dashboard.
+This project will extract data from the facebook ads api, transform and model the data for analytics and visualize in a dashboard.
 Available metrics include CAC, MER and aMER.
 
 ![graphic for project overview](images/overview_graphic.png)
 
 
 ## How to replicate this project:
-### 1. Create a fresh venv
+### 1. Create a fresh venv and install packages
+Create and activate a virtual environment to manage dependencies:  
+```bash
+python3 -m venv venv  
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+pip install -r requirements.txt
+```
 
 ### 2. Create GCP Service Accounts
 You will need one for dlt (extraction) and one for dbt (transformation).
 Give them these rights:
 dlt-service-account:
-BigQuery Data Editor
-BigQuery Job User
+BigQuery Data Editor,
+BigQuery Job User,
 BigQuery Read Session User
 
 dbt-service-account:
-BigQuery Data Editor
+BigQuery Data Editor,
 BigQuery Job User
 
 ### 3. Setting up the extraction with dlt
