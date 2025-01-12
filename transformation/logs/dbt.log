@@ -6308,3 +6308,2614 @@ SELECT * FROM int_shopify__orders;
 [0m12:34:19.436341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0f8860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0f8890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0f8a10>]}
 [0m12:34:19.436588 [debug] [MainThread]: Flushing usage events
 [0m12:34:19.988611 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:52:43.690441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ce7740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102f8a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102f87d0>]}
+
+
+============================== 12:52:43.693850 | fedbe860-f42e-41f3-9487-18ab2b11b84b ==============================
+[0m12:52:43.693850 [info ] [MainThread]: Running with dbt=1.9.1
+[0m12:52:43.694181 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'version_check': 'True', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:52:44.357312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fedbe860-f42e-41f3-9487-18ab2b11b84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12113faa0>]}
+[0m12:52:44.391125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fedbe860-f42e-41f3-9487-18ab2b11b84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106cbf740>]}
+[0m12:52:44.391451 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m12:52:44.477648 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m12:52:44.541319 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:52:44.541567 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:52:44.559610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fedbe860-f42e-41f3-9487-18ab2b11b84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12144faa0>]}
+[0m12:52:44.637264 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m12:52:44.639409 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m12:52:44.652148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fedbe860-f42e-41f3-9487-18ab2b11b84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10627b560>]}
+[0m12:52:44.652406 [info ] [MainThread]: Found 5 models, 5 data tests, 489 macros
+[0m12:52:44.652575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fedbe860-f42e-41f3-9487-18ab2b11b84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120ba4830>]}
+[0m12:52:44.653457 [info ] [MainThread]: 
+[0m12:52:44.653623 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:52:44.653754 [info ] [MainThread]: 
+[0m12:52:44.653983 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:52:44.655847 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_opensource-marketing-dwh'
+[0m12:52:44.656044 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:52:45.036282 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh, now list_opensource-marketing-dwh_dbt_transformations_new)
+[0m12:52:45.037079 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:52:45.384817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fedbe860-f42e-41f3-9487-18ab2b11b84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121497200>]}
+[0m12:52:45.385444 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:52:45.387980 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.stg_shopify__orders
+[0m12:52:45.388608 [info ] [Thread-1 (]: 1 of 5 START sql view model dbt_transformations_new.stg_shopify__orders ........ [RUN]
+[0m12:52:45.389109 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh_dbt_transformations_new, now model.online_shop_dbt.stg_shopify__orders)
+[0m12:52:45.389509 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.stg_shopify__orders
+[0m12:52:45.400029 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.stg_shopify__orders"
+[0m12:52:45.401769 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.stg_shopify__orders
+[0m12:52:45.430829 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.stg_shopify__orders"
+[0m12:52:45.431775 [debug] [Thread-1 (]: On model.online_shop_dbt.stg_shopify__orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.stg_shopify__orders"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+  OPTIONS()
+  as WITH shopify AS (
+    SELECT * FROM opensource-marketing-dwh.shopify.shopify_orders
+),
+
+-- removes columns that are not needed at the moment
+filter_source AS (
+    SELECT
+        id AS order_id,
+        customer_id,
+        -- app_id,
+        -- cancel_reason,
+        -- totals
+        total_discounts,
+        total_line_items_price,
+        total_price,
+        -- total_price_usd,
+        total_shipping_price,
+        total_subtotal_price,
+        total_tax,
+        -- total_tip_received,
+
+        -- cart_token,
+        -- checkout_id,
+        -- checkout_token,
+        -- timestamps
+        created_at,
+        cancelled_at,
+        closed_at,
+        processed_at,
+        updated_at,
+        -- client details
+        -- client_details_accept_language,
+        -- client_details_browser_height,
+        -- client_details_browser_ip,
+        -- client_details_browser_width,
+        -- client_details_session_hash,
+        -- client_details_user_agent,
+        -- confirmed,
+        -- currency,
+        -- customer_accepts_marketing,
+        -- customer_accepts_marketing_updated_at,
+        -- customer_created_at,
+        -- customer_uid,
+        -- customer_locale,
+        -- customer_multipass_identifier,
+        -- customer_note,
+        -- customer_state,
+        -- customer_tags,
+        -- customer_tax_exempt,
+        -- customer_total_spent,
+        -- customer_updated_at,
+        -- device_id,
+        -- discount application
+        discount_application_allocation_method,
+        discount_application_code,
+        discount_application_target_selection,
+        discount_application_target_type,
+        discount_application_type,
+        discount_application_value,
+        discount_application_value_type,
+        discount_application_title,
+        discount_application_description,
+        discount_code_amount,
+        discount_code_code,
+        discount_code_type,
+        -- financial_status,
+        -- fulfillment_status,
+        -- gateway,
+        -- uid,
+        landing_site,
+        -- landing_site_ref,
+        -- fulfillments_location_id,
+        -- fulfillments_line_item_id,
+        -- line items
+        -- line_item_discount_allocations_amount,
+        -- line_item_discount_allocations_application_index,
+        -- line_item_fulfillable_quantity,
+        -- line_item_fulfillment_service,
+        -- line_item_fulfillment_status,
+        -- line_item_gift_card,
+        -- line_item_grams,
+        -- line_item_id,
+        -- line_item_uid,
+        -- line_item_name,
+        -- line_item_price,
+        -- line_item_product_exists,
+        -- line_item_product_id,
+        -- line_item_product_uid,
+        -- line_item_properties,
+        -- line_item_quantity,
+        -- line_item_requires_shipping,
+        -- line_item_sku,
+        -- line_item_tax_lines_price,
+        -- line_item_tax_lines_rate,
+        -- line_item_tax_lines_title,
+        -- line_item_taxable,
+        -- line_item_title,
+        -- line_item_variant_id,
+        -- line_item_variant_uid,
+        -- line_item_vendor,
+        -- line_item_variant_inventory_management,
+        -- line_item_variant_title,
+        -- location_id,
+        -- name,
+        -- note,
+        -- number,
+        -- order adjustment
+        order_adjustment_amount,
+        order_adjustment_id,
+        order_adjustment_uid,
+        order_adjustment_kind,
+        order_adjustment_reason,
+        order_adjustment_refund_id,
+        order_adjustment_refund_uid,
+        order_adjustment_tax_amount,
+        -- order_number,
+        -- order_status_url,
+        -- payment_details_avs_result_code,
+        -- payment_details_credit_card_company,
+        payment_gateway_names,
+        presentment_currency,
+        -- processing_method,
+        -- reference,
+        referring_site,
+        -- refunds
+        refund_line_item_created_at,
+        refund_line_item_order_line_item_id,
+        refund_line_item_processed_at,
+        refund_line_item_quantity,
+        refund_line_item_refund_id,
+        refund_line_item_refund_line_item_id,
+        refund_line_item_restock,
+        refund_line_item_restock_type,
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status,
+        -- shipping address
+        -- shipping_address_city,
+        -- shipping_address_country,
+        -- shipping_address_country_code,
+        -- shipping_address_province,
+        -- shipping_address_province_code,
+        -- shipping_address_zip,
+        -- shipping_line_code,
+        -- billing_address_city,
+        -- billing_address_zip,
+        billing_address_country_code, -- billing address is relevant to see where the money goes to
+        -- shipping
+        shipping_line_discount_allocations_index,
+        shipping_line_discount_amount,
+        shipping_line_discounted_price,
+        shipping_line_id,
+        shipping_line_uid,
+        shipping_line_price,
+        shipping_line_source,
+        shipping_line_tax_lines_price,
+        shipping_line_tax_lines_rate,
+        shipping_line_tax_lines_title,
+        shipping_line_title,
+
+        -- source_identifier,
+        -- source_name,
+        -- source_url,
+        -- tags,
+
+        -- tax
+        tax_line_price,
+        tax_line_rate,
+        tax_line_title,
+        taxes_included,
+        test,
+        -- token,
+        -- total_weight,
+        -- user_id,
+        -- record_timestamp
+    FROM shopify
+    -- we want to remove test orders
+    WHERE test IS false
+)
+
+SELECT * FROM filter_source;
+
+
+[0m12:52:45.432280 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:52:45.954739 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:1809b15b-e749-48a4-a030-1d6fc6b7088c&page=queryresults
+[0m12:52:46.229763 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fedbe860-f42e-41f3-9487-18ab2b11b84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121496c00>]}
+[0m12:52:46.230159 [info ] [Thread-1 (]: 1 of 5 OK created sql view model dbt_transformations_new.stg_shopify__orders ... [[32mCREATE VIEW (0 processed)[0m in 0.84s]
+[0m12:52:46.230466 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.stg_shopify__orders
+[0m12:52:46.230897 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.int_shopify__order_discount
+[0m12:52:46.231177 [info ] [Thread-1 (]: 2 of 5 START sql view model dbt_transformations_new.int_shopify__order_discount  [RUN]
+[0m12:52:46.231401 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.stg_shopify__orders, now model.online_shop_dbt.int_shopify__order_discount)
+[0m12:52:46.231577 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.int_shopify__order_discount
+[0m12:52:46.233375 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.int_shopify__order_discount"
+[0m12:52:46.233827 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.int_shopify__order_discount
+[0m12:52:46.235242 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.int_shopify__order_discount"
+[0m12:52:46.235643 [debug] [Thread-1 (]: On model.online_shop_dbt.int_shopify__order_discount: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.int_shopify__order_discount"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_discount`
+  OPTIONS()
+  as WITH
+stg_shopify__orders AS (
+    SELECT
+        order_id,
+        customer_id,
+        -- the following metrics are just for checks. They do not really belong here
+        total_line_items_price,
+        total_discounts,
+        total_subtotal_price,
+        total_shipping_price,
+        total_tax,
+        total_price,
+
+        -- discounts -- 
+        -- This method only works because there are no columns with more than one element in the list (one discount per order).
+        -- To handle multiple list elements the array would have to be unnested.
+        -- Since this is just a test, i will take the easy route and use regex.
+        REGEXP_EXTRACT(discount_application_target_type, r'\[\'([^\']+)\'\]') AS discount_application_target_type,
+        REGEXP_EXTRACT(discount_application_allocation_method, r'\[\'([^\']+)\'\]') AS discount_application_allocation_method,
+        REGEXP_EXTRACT(discount_application_code, r'\[\'([^\']+)\'\]') AS discount_application_code,
+        REGEXP_EXTRACT(discount_application_target_selection, r'\[\'([^\']+)\'\]') AS discount_application_target_selection,
+        REGEXP_EXTRACT(discount_application_type, r'\[\'([^\']+)\'\]') AS discount_application_type,
+        CAST(REPLACE(REPLACE(discount_application_value, '[', ''), ']', '') AS FLOAT64) AS discount_application_value,
+
+        REGEXP_EXTRACT(discount_application_value_type, r'\[\'([^\']+)\'\]') AS discount_application_value_type,
+        REGEXP_EXTRACT(discount_application_title, r'\[\'([^\']+)\'\]') AS discount_application_title,
+        REGEXP_EXTRACT(discount_application_description, r'\[\'([^\']+)\'\]') AS discount_application_description,
+        REGEXP_EXTRACT(discount_code_code, r'\[\'([^\']+)\'\]') AS discount_code_code,
+        REGEXP_EXTRACT(discount_code_type, r'\[\'([^\']+)\'\]') AS discount_code_type,
+        CAST(REPLACE(REPLACE(discount_code_amount, '[', ''), ']', '') AS FLOAT64) AS discount_code_amount,
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+    -- only handle discounts in this model
+    WHERE total_discounts > 0
+)
+
+-- there are different types of discounts
+-- if discount_application_target_type = shipping_line, then the discount is only subtracted from the shipping!
+
+SELECT * FROM stg_shopify__orders;
+
+
+[0m12:52:46.235902 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:52:46.977607 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:38b05ecc-822e-43d4-afc0-81fcbaab2b56&page=queryresults
+[0m12:52:47.240803 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fedbe860-f42e-41f3-9487-18ab2b11b84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1224193a0>]}
+[0m12:52:47.242316 [info ] [Thread-1 (]: 2 of 5 OK created sql view model dbt_transformations_new.int_shopify__order_discount  [[32mCREATE VIEW (0 processed)[0m in 1.01s]
+[0m12:52:47.243192 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.int_shopify__order_discount
+[0m12:52:47.243640 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.int_shopify__order_refund
+[0m12:52:47.244141 [info ] [Thread-1 (]: 3 of 5 START sql view model dbt_transformations_new.int_shopify__order_refund .. [RUN]
+[0m12:52:47.244619 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.int_shopify__order_discount, now model.online_shop_dbt.int_shopify__order_refund)
+[0m12:52:47.245120 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.int_shopify__order_refund
+[0m12:52:47.249421 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.int_shopify__order_refund"
+[0m12:52:47.250902 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.int_shopify__order_refund
+[0m12:52:47.256093 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.int_shopify__order_refund"
+[0m12:52:47.257719 [debug] [Thread-1 (]: On model.online_shop_dbt.int_shopify__order_refund: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.int_shopify__order_refund"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_refund`
+  OPTIONS()
+  as WITH
+stg_shopify__orders AS (
+    SELECT
+        order_id,
+        customer_id,
+        total_discounts,
+        total_line_items_price,
+        total_price,
+        total_shipping_price,
+        total_subtotal_price,
+        total_tax,
+    
+        -- order_adjustment_amount,
+        -- order_adjustment_id,
+        -- order_adjustment_uid,
+        -- order_adjustment_kind,
+        -- order_adjustment_reason,
+        -- order_adjustment_refund_id,
+        -- order_adjustment_refund_uid,
+        -- order_adjustment_tax_amount,
+
+        -- line item level is ignored for now       
+        -- refund_line_item_created_at,
+        -- refund_line_item_order_line_item_id,
+        -- refund_line_item_processed_at,
+        -- refund_line_item_quantity,
+        -- refund_line_item_refund_id,
+        -- refund_line_item_refund_line_item_id,
+        -- refund_line_item_restock,
+        -- refund_line_item_restock_type,
+
+        -- refunds
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+),
+
+extract_refunds AS (
+    SELECT
+        order_id,
+        customer_id,
+        -- just for debugging
+        total_discounts,
+        total_line_items_price,
+        total_price,
+        total_shipping_price,
+        total_subtotal_price,
+        total_tax,
+        -- refunds
+        CAST(REPLACE(REPLACE(refund_transactions_id, '[', ''), ']', '') AS STRING) AS refund_transactions_id,
+        CAST(REPLACE(REPLACE(refund_transactions_amount, '[', ''), ']', '') AS STRING) AS refund_transactions_amount,
+        CAST(REPLACE(REPLACE(REPLACE(refund_transactions_created_at, '[', ''), ']', ''),  "'", '') AS STRING) AS refund_transactions_created_at,
+        CAST(REPLACE(REPLACE(REPLACE(refund_transactions_kind, '[', ''), ']', ''), "'", '') AS STRING) AS refund_transactions_kind,
+        CAST(REPLACE(REPLACE(REPLACE(refund_transactions_status, '[', ''), ']', ''), "'", '') AS STRING) AS refund_transactions_status
+    FROM stg_shopify__orders
+)
+
+SELECT * FROM extract_refunds
+-- exclude non refunds
+WHERE refund_transactions_id != '';
+
+
+[0m12:52:47.258429 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:52:48.000662 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:1ebd9dd3-5a98-468c-ab39-fb569dbe0429&page=queryresults
+[0m12:52:48.238199 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fedbe860-f42e-41f3-9487-18ab2b11b84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1224e86b0>]}
+[0m12:52:48.239381 [info ] [Thread-1 (]: 3 of 5 OK created sql view model dbt_transformations_new.int_shopify__order_refund  [[32mCREATE VIEW (0 processed)[0m in 0.99s]
+[0m12:52:48.240226 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.int_shopify__order_refund
+[0m12:52:48.240761 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.int_shopify__orders
+[0m12:52:48.241270 [info ] [Thread-1 (]: 4 of 5 START sql view model dbt_transformations_new.int_shopify__orders ........ [RUN]
+[0m12:52:48.241808 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.int_shopify__order_refund, now model.online_shop_dbt.int_shopify__orders)
+[0m12:52:48.242436 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.int_shopify__orders
+[0m12:52:48.247746 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.int_shopify__orders"
+[0m12:52:48.248904 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.int_shopify__orders
+[0m12:52:48.251989 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.int_shopify__orders"
+[0m12:52:48.253098 [debug] [Thread-1 (]: On model.online_shop_dbt.int_shopify__orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.int_shopify__orders"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__orders`
+  OPTIONS()
+  as WITH staging AS (
+    SELECT
+        order_id,
+        customer_id,
+        total_discounts,
+        total_line_items_price,
+        total_price,
+        total_shipping_price,
+        total_subtotal_price,
+        total_tax,
+
+        created_at,
+        cancelled_at,
+        closed_at,
+        processed_at,
+        updated_at,
+        discount_application_allocation_method,
+        discount_application_code,
+        discount_application_target_selection,
+        discount_application_target_type,
+        discount_application_type,
+        discount_application_value,
+        discount_application_value_type,
+        discount_application_title,
+        discount_application_description,
+        discount_code_amount,
+        discount_code_code,
+        discount_code_type,
+        landing_site,
+        order_adjustment_amount,
+        order_adjustment_id,
+        order_adjustment_uid,
+        order_adjustment_kind,
+        order_adjustment_reason,
+        order_adjustment_refund_id,
+        order_adjustment_refund_uid,
+        order_adjustment_tax_amount,
+        payment_gateway_names,
+        presentment_currency,
+        referring_site,
+        refund_line_item_created_at,
+        refund_line_item_order_line_item_id,
+        refund_line_item_processed_at,
+        refund_line_item_quantity,
+        refund_line_item_refund_id,
+        refund_line_item_refund_line_item_id,
+        refund_line_item_restock,
+        refund_line_item_restock_type,
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status,
+        shipping_line_discount_allocations_index,
+        shipping_line_discount_amount,
+        shipping_line_discounted_price,
+        shipping_line_id,
+        shipping_line_uid,
+        shipping_line_price,
+        shipping_line_source,
+        shipping_line_tax_lines_price,
+        shipping_line_tax_lines_rate,
+        shipping_line_tax_lines_title,
+        shipping_line_title,
+
+
+        tax_line_price,
+        tax_line_rate,
+        tax_line_title,
+        taxes_included,
+        test,
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+),
+
+extract_columns AS (
+    SELECT
+        order_id,
+        customer_id,
+        total_discounts,
+        total_line_items_price,
+        total_price,
+        total_shipping_price,
+        total_subtotal_price,
+        total_tax,
+
+        created_at,
+        cancelled_at,
+        closed_at,
+        processed_at,
+        updated_at,
+        discount_application_allocation_method,
+        discount_application_code,
+        discount_application_target_selection,
+        discount_application_target_type,
+        discount_application_type,
+        discount_application_value,
+        discount_application_value_type,
+        discount_application_title,
+        discount_application_description,
+        discount_code_amount,
+        discount_code_code,
+        discount_code_type,
+        landing_site,
+        -- Extract the base URL (before the ?)
+        REGEXP_EXTRACT(landing_site, r'^([^?]+)') AS base_url,
+        -- Extract the utm_source
+        REGEXP_EXTRACT(landing_site, r'utm_source=([^&]+)') AS utm_source,
+        -- Extract the utm_medium
+        REGEXP_EXTRACT(landing_site, r'utm_medium=([^&]+)') AS utm_medium,
+
+        -- Extract the utm_campaign
+        REGEXP_EXTRACT(landing_site, r'utm_campaign=([^&]+)') AS utm_campaign,
+
+        -- Extract the utm_content
+        REGEXP_EXTRACT(landing_site, r'utm_content=([^&]+)') AS utm_content,
+
+        -- Extract the utm_term
+        REGEXP_EXTRACT(landing_site, r'utm_term=([^&]+)') AS utm_term,
+
+        -- Extract the fbclid
+        REGEXP_EXTRACT(landing_site, r'fbclid=([^&]+)') AS fbclid,
+
+        -- Extract the campaign_id
+        REGEXP_EXTRACT(landing_site, r'campaign_id=([^&]+)') AS campaign_id,
+        order_adjustment_amount,
+        order_adjustment_id,
+        order_adjustment_uid,
+        order_adjustment_kind,
+        order_adjustment_reason,
+        order_adjustment_refund_id,
+        order_adjustment_refund_uid,
+        order_adjustment_tax_amount,
+        payment_gateway_names,
+        presentment_currency,
+        referring_site,
+        refund_line_item_created_at,
+        refund_line_item_order_line_item_id,
+        refund_line_item_processed_at,
+        refund_line_item_quantity,
+        refund_line_item_refund_id,
+        refund_line_item_refund_line_item_id,
+        refund_line_item_restock,
+        refund_line_item_restock_type,
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status,
+        shipping_line_discount_allocations_index,
+        shipping_line_discount_amount,
+        shipping_line_discounted_price,
+        shipping_line_id,
+        shipping_line_uid,
+        shipping_line_price,
+        shipping_line_source,
+        shipping_line_tax_lines_price,
+        shipping_line_tax_lines_rate,
+        shipping_line_tax_lines_title,
+        shipping_line_title,
+
+
+        tax_line_price,
+        tax_line_rate,
+        tax_line_title,
+        taxes_included,
+        test,
+    FROM staging
+)
+
+
+
+SELECT * FROM extract_columns;
+
+
+[0m12:52:48.254431 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:52:49.027670 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:6b34a480-f002-4547-89f6-d16b69d6d490&page=queryresults
+[0m12:52:49.277918 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fedbe860-f42e-41f3-9487-18ab2b11b84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1224de960>]}
+[0m12:52:49.279264 [info ] [Thread-1 (]: 4 of 5 OK created sql view model dbt_transformations_new.int_shopify__orders ... [[32mCREATE VIEW (0 processed)[0m in 1.04s]
+[0m12:52:49.280620 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.int_shopify__orders
+[0m12:52:49.281326 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.mrt_shopify__orders
+[0m12:52:49.281997 [info ] [Thread-1 (]: 5 of 5 START sql view model dbt_transformations_new.mrt_shopify__orders ........ [RUN]
+[0m12:52:49.282560 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.int_shopify__orders, now model.online_shop_dbt.mrt_shopify__orders)
+[0m12:52:49.282949 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.mrt_shopify__orders
+[0m12:52:49.288422 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.mrt_shopify__orders"
+[0m12:52:49.289607 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.mrt_shopify__orders
+[0m12:52:49.293093 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.mrt_shopify__orders"
+[0m12:52:49.294229 [debug] [Thread-1 (]: On model.online_shop_dbt.mrt_shopify__orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.mrt_shopify__orders"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations_new`.`mrt_shopify__orders`
+  OPTIONS()
+  as WITH int_shopify__orders AS (
+    SELECT
+        order_id,
+        customer_id,
+        total_discounts,
+        total_line_items_price,
+        total_price,
+        total_shipping_price,
+        total_subtotal_price,
+        total_tax,
+
+        created_at,
+        cancelled_at,
+        closed_at,
+        processed_at,
+        updated_at,
+        discount_application_allocation_method,
+        discount_application_code,
+        discount_application_target_selection,
+        discount_application_target_type,
+        discount_application_type,
+        discount_application_value,
+        discount_application_value_type,
+        discount_application_title,
+        discount_application_description,
+        discount_code_amount,
+        discount_code_code,
+        discount_code_type,
+        landing_site,
+        base_url,
+        utm_source,
+        utm_medium,
+        utm_campaign,
+        utm_content,
+        utm_term,
+        fbclid,
+        campaign_id,
+        order_adjustment_amount,
+        order_adjustment_id,
+        order_adjustment_uid,
+        order_adjustment_kind,
+        order_adjustment_reason,
+        order_adjustment_refund_id,
+        order_adjustment_refund_uid,
+        order_adjustment_tax_amount,
+        payment_gateway_names,
+        presentment_currency,
+        referring_site,
+        refund_line_item_created_at,
+        refund_line_item_order_line_item_id,
+        refund_line_item_processed_at,
+        refund_line_item_quantity,
+        refund_line_item_refund_id,
+        refund_line_item_refund_line_item_id,
+        refund_line_item_restock,
+        refund_line_item_restock_type,
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status,
+        shipping_line_discount_allocations_index,
+        shipping_line_discount_amount,
+        shipping_line_discounted_price,
+        shipping_line_id,
+        shipping_line_uid,
+        shipping_line_price,
+        shipping_line_source,
+        shipping_line_tax_lines_price,
+        shipping_line_tax_lines_rate,
+        shipping_line_tax_lines_title,
+        shipping_line_title,
+        tax_line_price,
+        tax_line_rate,
+        tax_line_title,
+        taxes_included,
+        test
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__orders`
+),
+
+-- if discount_application_target_type = shipping_line, then the discount is only subtracted from the shipping!
+discounts AS (
+    SELECT
+        order_id,
+        discount_application_target_type,
+        discount_application_allocation_method,
+        discount_application_code,
+        discount_application_target_selection,
+        discount_application_type,
+        discount_application_value,
+
+        discount_application_value_type,
+        discount_application_title,
+        discount_application_description,
+        discount_code_code,
+        discount_code_type,
+        discount_code_amount,
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_discount`
+),
+
+-- should a refunded shipping be subtracted from our net revenue? Does net rev include shipping? 
+-- should refunds be added to the (day of the) order or later to the day of the refund?
+refunds AS (
+    SELECT
+        order_id,
+        -- refunds
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_refund`
+)
+
+-- total_subtotal_price = total_line_items_price - total_discounts
+-- Klar Definition: Net Revenue = Gross Revenue - Taxes - Refund Value
+
+-- calculating net_revenue:
+--                  total_line_items_price
+--                  - total_discounts (careful! This is only valid for discount_application_target_type != shipping_line. See order_id = 6064341483866 for an example.)
+--                  ----------------
+--                  = total_subtotal_price 
+--                      + total_shipping_price
+                        -----------------                    
+--                          - returns/refunds
+--                          -----------------
+--                          = net_revenue
+
+-- total_price is what the customer pays
+-- total_price = total_line_items_price - total_discounts + total_shipping_price + total_tax
+SELECT * FROM int_shopify__orders;
+
+
+[0m12:52:49.294913 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:52:50.051233 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:1dec78e9-447e-4552-96d1-efdee5dfd010&page=queryresults
+[0m12:52:50.344258 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fedbe860-f42e-41f3-9487-18ab2b11b84b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1224dede0>]}
+[0m12:52:50.345621 [info ] [Thread-1 (]: 5 of 5 OK created sql view model dbt_transformations_new.mrt_shopify__orders ... [[32mCREATE VIEW (0 processed)[0m in 1.06s]
+[0m12:52:50.346642 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.mrt_shopify__orders
+[0m12:52:50.348076 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:52:50.349949 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:52:50.350338 [debug] [MainThread]: Connection 'model.online_shop_dbt.mrt_shopify__orders' was properly closed.
+[0m12:52:50.350789 [info ] [MainThread]: 
+[0m12:52:50.351203 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 5.70 seconds (5.70s).
+[0m12:52:50.352923 [debug] [MainThread]: Command end result
+[0m12:52:50.382748 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m12:52:50.384295 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m12:52:50.389366 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/run_results.json
+[0m12:52:50.389619 [info ] [MainThread]: 
+[0m12:52:50.389891 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:52:50.390105 [info ] [MainThread]: 
+[0m12:52:50.390331 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m12:52:50.393033 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.744491, "process_in_blocks": "0", "process_kernel_time": 0.269216, "process_mem_max_rss": "210485248", "process_out_blocks": "0", "process_user_time": 1.942167}
+[0m12:52:50.393496 [debug] [MainThread]: Command `dbt run` succeeded at 12:52:50.393397 after 6.75 seconds
+[0m12:52:50.393809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102f8860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102f8890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102f8a40>]}
+[0m12:52:50.394099 [debug] [MainThread]: Flushing usage events
+[0m12:52:50.993218 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:16:47.231815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066612e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cf8a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cf8740>]}
+
+
+============================== 13:16:47.235297 | 13748ffb-8117-419c-81a0-a69535f71f0e ==============================
+[0m13:16:47.235297 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:16:47.235644 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:16:47.901491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '13748ffb-8117-419c-81a0-a69535f71f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x131317080>]}
+[0m13:16:47.935635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '13748ffb-8117-419c-81a0-a69535f71f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106eaf830>]}
+[0m13:16:47.935959 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m13:16:48.023866 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m13:16:48.094398 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m13:16:48.094708 [debug] [MainThread]: Partial parsing: added file: online_shop_dbt://online_shop_dbt/tests/test_total_price.sql
+[0m13:16:48.232326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '13748ffb-8117-419c-81a0-a69535f71f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c9b920>]}
+[0m13:16:48.273168 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m13:16:48.275596 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m13:16:48.289256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '13748ffb-8117-419c-81a0-a69535f71f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13192d400>]}
+[0m13:16:48.289526 [info ] [MainThread]: Found 5 models, 8 data tests, 489 macros
+[0m13:16:48.289693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '13748ffb-8117-419c-81a0-a69535f71f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1318fede0>]}
+[0m13:16:48.290602 [info ] [MainThread]: 
+[0m13:16:48.290781 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:16:48.290921 [info ] [MainThread]: 
+[0m13:16:48.291151 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:16:48.293024 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_opensource-marketing-dwh'
+[0m13:16:48.293219 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:16:48.773825 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh, now list_opensource-marketing-dwh_dbt_transformations_new)
+[0m13:16:48.775046 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:16:49.102991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '13748ffb-8117-419c-81a0-a69535f71f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x131cafe30>]}
+[0m13:16:49.104124 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:16:49.107819 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.stg_shopify__orders
+[0m13:16:49.108401 [info ] [Thread-1 (]: 1 of 5 START sql view model dbt_transformations_new.stg_shopify__orders ........ [RUN]
+[0m13:16:49.108933 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh_dbt_transformations_new, now model.online_shop_dbt.stg_shopify__orders)
+[0m13:16:49.109429 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.stg_shopify__orders
+[0m13:16:49.119088 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.stg_shopify__orders"
+[0m13:16:49.120796 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.stg_shopify__orders
+[0m13:16:49.151187 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.stg_shopify__orders"
+[0m13:16:49.152215 [debug] [Thread-1 (]: On model.online_shop_dbt.stg_shopify__orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.stg_shopify__orders"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+  OPTIONS()
+  as WITH shopify AS (
+    SELECT * FROM opensource-marketing-dwh.shopify.shopify_orders
+),
+
+-- removes columns that are not needed at the moment
+filter_source AS (
+    SELECT
+        id AS order_id,
+        customer_id,
+        -- app_id,
+        -- cancel_reason,
+        -- totals
+        total_discounts,
+        total_line_items_price,
+        total_price,
+        -- total_price_usd,
+        total_shipping_price,
+        total_subtotal_price,
+        total_tax,
+        -- total_tip_received,
+
+        -- cart_token,
+        -- checkout_id,
+        -- checkout_token,
+        -- timestamps
+        created_at,
+        cancelled_at,
+        closed_at,
+        processed_at,
+        updated_at,
+        -- client details
+        -- client_details_accept_language,
+        -- client_details_browser_height,
+        -- client_details_browser_ip,
+        -- client_details_browser_width,
+        -- client_details_session_hash,
+        -- client_details_user_agent,
+        -- confirmed,
+        -- currency,
+        -- customer_accepts_marketing,
+        -- customer_accepts_marketing_updated_at,
+        -- customer_created_at,
+        -- customer_uid,
+        -- customer_locale,
+        -- customer_multipass_identifier,
+        -- customer_note,
+        -- customer_state,
+        -- customer_tags,
+        -- customer_tax_exempt,
+        -- customer_total_spent,
+        -- customer_updated_at,
+        -- device_id,
+        -- discount application
+        discount_application_allocation_method,
+        discount_application_code,
+        discount_application_target_selection,
+        discount_application_target_type,
+        discount_application_type,
+        discount_application_value,
+        discount_application_value_type,
+        discount_application_title,
+        discount_application_description,
+        discount_code_amount,
+        discount_code_code,
+        discount_code_type,
+        -- financial_status,
+        -- fulfillment_status,
+        -- gateway,
+        -- uid,
+        landing_site,
+        -- landing_site_ref,
+        -- fulfillments_location_id,
+        -- fulfillments_line_item_id,
+        -- line items
+        -- line_item_discount_allocations_amount,
+        -- line_item_discount_allocations_application_index,
+        -- line_item_fulfillable_quantity,
+        -- line_item_fulfillment_service,
+        -- line_item_fulfillment_status,
+        -- line_item_gift_card,
+        -- line_item_grams,
+        -- line_item_id,
+        -- line_item_uid,
+        -- line_item_name,
+        -- line_item_price,
+        -- line_item_product_exists,
+        -- line_item_product_id,
+        -- line_item_product_uid,
+        -- line_item_properties,
+        -- line_item_quantity,
+        -- line_item_requires_shipping,
+        -- line_item_sku,
+        -- line_item_tax_lines_price,
+        -- line_item_tax_lines_rate,
+        -- line_item_tax_lines_title,
+        -- line_item_taxable,
+        -- line_item_title,
+        -- line_item_variant_id,
+        -- line_item_variant_uid,
+        -- line_item_vendor,
+        -- line_item_variant_inventory_management,
+        -- line_item_variant_title,
+        -- location_id,
+        -- name,
+        -- note,
+        -- number,
+        -- order adjustment
+        order_adjustment_amount,
+        order_adjustment_id,
+        order_adjustment_uid,
+        order_adjustment_kind,
+        order_adjustment_reason,
+        order_adjustment_refund_id,
+        order_adjustment_refund_uid,
+        order_adjustment_tax_amount,
+        -- order_number,
+        -- order_status_url,
+        -- payment_details_avs_result_code,
+        -- payment_details_credit_card_company,
+        payment_gateway_names,
+        presentment_currency,
+        -- processing_method,
+        -- reference,
+        referring_site,
+        -- refunds
+        refund_line_item_created_at,
+        refund_line_item_order_line_item_id,
+        refund_line_item_processed_at,
+        refund_line_item_quantity,
+        refund_line_item_refund_id,
+        refund_line_item_refund_line_item_id,
+        refund_line_item_restock,
+        refund_line_item_restock_type,
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status,
+        -- shipping address
+        -- shipping_address_city,
+        -- shipping_address_country,
+        -- shipping_address_country_code,
+        -- shipping_address_province,
+        -- shipping_address_province_code,
+        -- shipping_address_zip,
+        -- shipping_line_code,
+        -- billing_address_city,
+        -- billing_address_zip,
+        billing_address_country_code, -- billing address is relevant to see where the money goes to
+        -- shipping
+        shipping_line_discount_allocations_index,
+        shipping_line_discount_amount,
+        shipping_line_discounted_price,
+        shipping_line_id,
+        shipping_line_uid,
+        shipping_line_price,
+        shipping_line_source,
+        shipping_line_tax_lines_price,
+        shipping_line_tax_lines_rate,
+        shipping_line_tax_lines_title,
+        shipping_line_title,
+
+        -- source_identifier,
+        -- source_name,
+        -- source_url,
+        -- tags,
+
+        -- tax
+        tax_line_price,
+        tax_line_rate,
+        tax_line_title,
+        taxes_included,
+        test,
+        -- token,
+        -- total_weight,
+        -- user_id,
+        -- record_timestamp
+    FROM shopify
+    -- we want to remove test orders
+    WHERE test IS false
+)
+
+SELECT * FROM filter_source;
+
+
+[0m13:16:49.152764 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:16:49.710196 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:2e59da08-23bb-46b5-b9bd-938db39a16ab&page=queryresults
+[0m13:16:50.092505 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '13748ffb-8117-419c-81a0-a69535f71f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10662c860>]}
+[0m13:16:50.092991 [info ] [Thread-1 (]: 1 of 5 OK created sql view model dbt_transformations_new.stg_shopify__orders ... [[32mCREATE VIEW (0 processed)[0m in 0.98s]
+[0m13:16:50.093432 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.stg_shopify__orders
+[0m13:16:50.093944 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.int_shopify__order_discount
+[0m13:16:50.094279 [info ] [Thread-1 (]: 2 of 5 START sql view model dbt_transformations_new.int_shopify__order_discount  [RUN]
+[0m13:16:50.094559 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.stg_shopify__orders, now model.online_shop_dbt.int_shopify__order_discount)
+[0m13:16:50.094774 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.int_shopify__order_discount
+[0m13:16:50.096843 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.int_shopify__order_discount"
+[0m13:16:50.097604 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.int_shopify__order_discount
+[0m13:16:50.099429 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.int_shopify__order_discount"
+[0m13:16:50.099927 [debug] [Thread-1 (]: On model.online_shop_dbt.int_shopify__order_discount: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.int_shopify__order_discount"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_discount`
+  OPTIONS()
+  as WITH
+stg_shopify__orders AS (
+    SELECT
+        order_id,
+        customer_id,
+        -- the following metrics are just for checks. They do not really belong here
+        total_line_items_price,
+        total_discounts,
+        total_subtotal_price,
+        total_shipping_price,
+        total_tax,
+        total_price,
+
+        -- discounts -- 
+        -- This method only works because there are no columns with more than one element in the list (one discount per order).
+        -- To handle multiple list elements the array would have to be unnested.
+        -- Since this is just a test, i will take the easy route and use regex.
+        REGEXP_EXTRACT(discount_application_target_type, r'\[\'([^\']+)\'\]') AS discount_application_target_type,
+        REGEXP_EXTRACT(discount_application_allocation_method, r'\[\'([^\']+)\'\]') AS discount_application_allocation_method,
+        REGEXP_EXTRACT(discount_application_code, r'\[\'([^\']+)\'\]') AS discount_application_code,
+        REGEXP_EXTRACT(discount_application_target_selection, r'\[\'([^\']+)\'\]') AS discount_application_target_selection,
+        REGEXP_EXTRACT(discount_application_type, r'\[\'([^\']+)\'\]') AS discount_application_type,
+        CAST(REPLACE(REPLACE(discount_application_value, '[', ''), ']', '') AS FLOAT64) AS discount_application_value,
+
+        REGEXP_EXTRACT(discount_application_value_type, r'\[\'([^\']+)\'\]') AS discount_application_value_type,
+        REGEXP_EXTRACT(discount_application_title, r'\[\'([^\']+)\'\]') AS discount_application_title,
+        REGEXP_EXTRACT(discount_application_description, r'\[\'([^\']+)\'\]') AS discount_application_description,
+        REGEXP_EXTRACT(discount_code_code, r'\[\'([^\']+)\'\]') AS discount_code_code,
+        REGEXP_EXTRACT(discount_code_type, r'\[\'([^\']+)\'\]') AS discount_code_type,
+        CAST(REPLACE(REPLACE(discount_code_amount, '[', ''), ']', '') AS FLOAT64) AS discount_code_amount,
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+    -- only handle discounts in this model
+    WHERE total_discounts > 0
+)
+
+-- there are different types of discounts
+-- if discount_application_target_type = shipping_line, then the discount is only subtracted from the shipping!
+
+SELECT * FROM stg_shopify__orders;
+
+
+[0m13:16:50.100316 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:16:50.834409 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:04fe4835-804c-4cf8-9d3d-9a5f64270e9e&page=queryresults
+[0m13:16:51.121945 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '13748ffb-8117-419c-81a0-a69535f71f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1319b92b0>]}
+[0m13:16:51.123283 [info ] [Thread-1 (]: 2 of 5 OK created sql view model dbt_transformations_new.int_shopify__order_discount  [[32mCREATE VIEW (0 processed)[0m in 1.03s]
+[0m13:16:51.124056 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.int_shopify__order_discount
+[0m13:16:51.124486 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.int_shopify__order_refund
+[0m13:16:51.125055 [info ] [Thread-1 (]: 3 of 5 START sql view model dbt_transformations_new.int_shopify__order_refund .. [RUN]
+[0m13:16:51.125615 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.int_shopify__order_discount, now model.online_shop_dbt.int_shopify__order_refund)
+[0m13:16:51.126011 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.int_shopify__order_refund
+[0m13:16:51.130169 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.int_shopify__order_refund"
+[0m13:16:51.132116 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.int_shopify__order_refund
+[0m13:16:51.134447 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.int_shopify__order_refund"
+[0m13:16:51.135447 [debug] [Thread-1 (]: On model.online_shop_dbt.int_shopify__order_refund: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.int_shopify__order_refund"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_refund`
+  OPTIONS()
+  as WITH
+stg_shopify__orders AS (
+    SELECT
+        order_id,
+        customer_id,
+        total_discounts,
+        total_line_items_price,
+        total_price,
+        total_shipping_price,
+        total_subtotal_price,
+        total_tax,
+    
+        -- order_adjustment_amount,
+        -- order_adjustment_id,
+        -- order_adjustment_uid,
+        -- order_adjustment_kind,
+        -- order_adjustment_reason,
+        -- order_adjustment_refund_id,
+        -- order_adjustment_refund_uid,
+        -- order_adjustment_tax_amount,
+
+        -- line item level is ignored for now       
+        -- refund_line_item_created_at,
+        -- refund_line_item_order_line_item_id,
+        -- refund_line_item_processed_at,
+        -- refund_line_item_quantity,
+        -- refund_line_item_refund_id,
+        -- refund_line_item_refund_line_item_id,
+        -- refund_line_item_restock,
+        -- refund_line_item_restock_type,
+
+        -- refunds
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+),
+
+extract_refunds AS (
+    SELECT
+        order_id,
+        customer_id,
+        -- just for debugging
+        total_discounts,
+        total_line_items_price,
+        total_price,
+        total_shipping_price,
+        total_subtotal_price,
+        total_tax,
+        -- refunds
+        CAST(REPLACE(REPLACE(refund_transactions_id, '[', ''), ']', '') AS STRING) AS refund_transactions_id,
+        CAST(REPLACE(REPLACE(refund_transactions_amount, '[', ''), ']', '') AS STRING) AS refund_transactions_amount,
+        CAST(REPLACE(REPLACE(REPLACE(refund_transactions_created_at, '[', ''), ']', ''),  "'", '') AS STRING) AS refund_transactions_created_at,
+        CAST(REPLACE(REPLACE(REPLACE(refund_transactions_kind, '[', ''), ']', ''), "'", '') AS STRING) AS refund_transactions_kind,
+        CAST(REPLACE(REPLACE(REPLACE(refund_transactions_status, '[', ''), ']', ''), "'", '') AS STRING) AS refund_transactions_status
+    FROM stg_shopify__orders
+)
+
+SELECT * FROM extract_refunds
+-- exclude non refunds
+WHERE refund_transactions_id != '';
+
+
+[0m13:16:51.136238 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:16:51.860491 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:c54c8749-5797-4b60-8f22-5b91c394d0a6&page=queryresults
+[0m13:16:52.164315 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '13748ffb-8117-419c-81a0-a69535f71f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1366b44a0>]}
+[0m13:16:52.165646 [info ] [Thread-1 (]: 3 of 5 OK created sql view model dbt_transformations_new.int_shopify__order_refund  [[32mCREATE VIEW (0 processed)[0m in 1.04s]
+[0m13:16:52.166421 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.int_shopify__order_refund
+[0m13:16:52.166843 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.int_shopify__orders
+[0m13:16:52.167332 [info ] [Thread-1 (]: 4 of 5 START sql view model dbt_transformations_new.int_shopify__orders ........ [RUN]
+[0m13:16:52.167810 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.int_shopify__order_refund, now model.online_shop_dbt.int_shopify__orders)
+[0m13:16:52.168174 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.int_shopify__orders
+[0m13:16:52.173228 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.int_shopify__orders"
+[0m13:16:52.175377 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.int_shopify__orders
+[0m13:16:52.178918 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.int_shopify__orders"
+[0m13:16:52.180724 [debug] [Thread-1 (]: On model.online_shop_dbt.int_shopify__orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.int_shopify__orders"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__orders`
+  OPTIONS()
+  as WITH staging AS (
+    SELECT
+        order_id,
+        customer_id,
+        total_discounts,
+        total_line_items_price,
+        total_price,
+        total_shipping_price,
+        total_subtotal_price,
+        total_tax,
+
+        created_at,
+        cancelled_at,
+        closed_at,
+        processed_at,
+        updated_at,
+        discount_application_allocation_method,
+        discount_application_code,
+        discount_application_target_selection,
+        discount_application_target_type,
+        discount_application_type,
+        discount_application_value,
+        discount_application_value_type,
+        discount_application_title,
+        discount_application_description,
+        discount_code_amount,
+        discount_code_code,
+        discount_code_type,
+        landing_site,
+        order_adjustment_amount,
+        order_adjustment_id,
+        order_adjustment_uid,
+        order_adjustment_kind,
+        order_adjustment_reason,
+        order_adjustment_refund_id,
+        order_adjustment_refund_uid,
+        order_adjustment_tax_amount,
+        payment_gateway_names,
+        presentment_currency,
+        referring_site,
+        refund_line_item_created_at,
+        refund_line_item_order_line_item_id,
+        refund_line_item_processed_at,
+        refund_line_item_quantity,
+        refund_line_item_refund_id,
+        refund_line_item_refund_line_item_id,
+        refund_line_item_restock,
+        refund_line_item_restock_type,
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status,
+        shipping_line_discount_allocations_index,
+        shipping_line_discount_amount,
+        shipping_line_discounted_price,
+        shipping_line_id,
+        shipping_line_uid,
+        shipping_line_price,
+        shipping_line_source,
+        shipping_line_tax_lines_price,
+        shipping_line_tax_lines_rate,
+        shipping_line_tax_lines_title,
+        shipping_line_title,
+
+
+        tax_line_price,
+        tax_line_rate,
+        tax_line_title,
+        taxes_included,
+        test,
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+),
+
+extract_columns AS (
+    SELECT
+        order_id,
+        customer_id,
+        total_discounts,
+        total_line_items_price,
+        total_price,
+        total_shipping_price,
+        total_subtotal_price,
+        total_tax,
+
+        created_at,
+        cancelled_at,
+        closed_at,
+        processed_at,
+        updated_at,
+        discount_application_allocation_method,
+        discount_application_code,
+        discount_application_target_selection,
+        discount_application_target_type,
+        discount_application_type,
+        discount_application_value,
+        discount_application_value_type,
+        discount_application_title,
+        discount_application_description,
+        discount_code_amount,
+        discount_code_code,
+        discount_code_type,
+        landing_site,
+        -- Extract the base URL (before the ?)
+        REGEXP_EXTRACT(landing_site, r'^([^?]+)') AS base_url,
+        -- Extract the utm_source
+        REGEXP_EXTRACT(landing_site, r'utm_source=([^&]+)') AS utm_source,
+        -- Extract the utm_medium
+        REGEXP_EXTRACT(landing_site, r'utm_medium=([^&]+)') AS utm_medium,
+
+        -- Extract the utm_campaign
+        REGEXP_EXTRACT(landing_site, r'utm_campaign=([^&]+)') AS utm_campaign,
+
+        -- Extract the utm_content
+        REGEXP_EXTRACT(landing_site, r'utm_content=([^&]+)') AS utm_content,
+
+        -- Extract the utm_term
+        REGEXP_EXTRACT(landing_site, r'utm_term=([^&]+)') AS utm_term,
+
+        -- Extract the fbclid
+        REGEXP_EXTRACT(landing_site, r'fbclid=([^&]+)') AS fbclid,
+
+        -- Extract the campaign_id
+        REGEXP_EXTRACT(landing_site, r'campaign_id=([^&]+)') AS campaign_id,
+        order_adjustment_amount,
+        order_adjustment_id,
+        order_adjustment_uid,
+        order_adjustment_kind,
+        order_adjustment_reason,
+        order_adjustment_refund_id,
+        order_adjustment_refund_uid,
+        order_adjustment_tax_amount,
+        payment_gateway_names,
+        presentment_currency,
+        referring_site,
+        refund_line_item_created_at,
+        refund_line_item_order_line_item_id,
+        refund_line_item_processed_at,
+        refund_line_item_quantity,
+        refund_line_item_refund_id,
+        refund_line_item_refund_line_item_id,
+        refund_line_item_restock,
+        refund_line_item_restock_type,
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status,
+        shipping_line_discount_allocations_index,
+        shipping_line_discount_amount,
+        shipping_line_discounted_price,
+        shipping_line_id,
+        shipping_line_uid,
+        shipping_line_price,
+        shipping_line_source,
+        shipping_line_tax_lines_price,
+        shipping_line_tax_lines_rate,
+        shipping_line_tax_lines_title,
+        shipping_line_title,
+
+
+        tax_line_price,
+        tax_line_rate,
+        tax_line_title,
+        taxes_included,
+        test,
+    FROM staging
+)
+
+
+
+SELECT * FROM extract_columns;
+
+
+[0m13:16:52.181664 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:16:52.987016 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:e27c88e8-ae8d-4c01-91e6-138798adcbbf&page=queryresults
+[0m13:16:53.303815 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '13748ffb-8117-419c-81a0-a69535f71f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1366b6b40>]}
+[0m13:16:53.304385 [info ] [Thread-1 (]: 4 of 5 OK created sql view model dbt_transformations_new.int_shopify__orders ... [[32mCREATE VIEW (0 processed)[0m in 1.14s]
+[0m13:16:53.304785 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.int_shopify__orders
+[0m13:16:53.305274 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.mrt_shopify__orders
+[0m13:16:53.305785 [info ] [Thread-1 (]: 5 of 5 START sql view model dbt_transformations_new.mrt_shopify__orders ........ [RUN]
+[0m13:16:53.306476 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.online_shop_dbt.int_shopify__orders, now model.online_shop_dbt.mrt_shopify__orders)
+[0m13:16:53.307008 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.mrt_shopify__orders
+[0m13:16:53.313169 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.mrt_shopify__orders"
+[0m13:16:53.315349 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.mrt_shopify__orders
+[0m13:16:53.321449 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.mrt_shopify__orders"
+[0m13:16:53.322776 [debug] [Thread-1 (]: On model.online_shop_dbt.mrt_shopify__orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.mrt_shopify__orders"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations_new`.`mrt_shopify__orders`
+  OPTIONS()
+  as WITH orders AS (
+    SELECT
+        order_id,
+        customer_id,
+        total_discounts,
+        total_line_items_price,
+        total_price,
+        total_shipping_price,
+        total_subtotal_price,
+        total_tax,
+
+        created_at,
+        cancelled_at,
+        closed_at,
+        processed_at,
+        updated_at,
+        discount_application_allocation_method,
+        discount_application_code,
+        discount_application_target_selection,
+        discount_application_target_type,
+        discount_application_type,
+        discount_application_value,
+        discount_application_value_type,
+        discount_application_title,
+        discount_application_description,
+        discount_code_amount,
+        discount_code_code,
+        discount_code_type,
+        landing_site,
+        base_url,
+        utm_source,
+        utm_medium,
+        utm_campaign,
+        utm_content,
+        utm_term,
+        fbclid,
+        campaign_id,
+        order_adjustment_amount,
+        order_adjustment_id,
+        order_adjustment_uid,
+        order_adjustment_kind,
+        order_adjustment_reason,
+        order_adjustment_refund_id,
+        order_adjustment_refund_uid,
+        order_adjustment_tax_amount,
+        payment_gateway_names,
+        presentment_currency,
+        referring_site,
+        refund_line_item_created_at,
+        refund_line_item_order_line_item_id,
+        refund_line_item_processed_at,
+        refund_line_item_quantity,
+        refund_line_item_refund_id,
+        refund_line_item_refund_line_item_id,
+        refund_line_item_restock,
+        refund_line_item_restock_type,
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status,
+        shipping_line_discount_allocations_index,
+        shipping_line_discount_amount,
+        shipping_line_discounted_price,
+        shipping_line_id,
+        shipping_line_uid,
+        shipping_line_price,
+        shipping_line_source,
+        shipping_line_tax_lines_price,
+        shipping_line_tax_lines_rate,
+        shipping_line_tax_lines_title,
+        shipping_line_title,
+        tax_line_price,
+        tax_line_rate,
+        tax_line_title,
+        taxes_included,
+        test
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__orders`
+),
+
+-- if discount_application_target_type = shipping_line, then the discount is only subtracted from the shipping!
+discounts AS (
+    SELECT
+        order_id,
+        discount_application_target_type,
+        discount_application_allocation_method,
+        discount_application_code,
+        discount_application_target_selection,
+        discount_application_type,
+        discount_application_value,
+
+        discount_application_value_type,
+        discount_application_title,
+        discount_application_description,
+        discount_code_code,
+        discount_code_type,
+        discount_code_amount,
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_discount`
+),
+
+-- should a refunded shipping be subtracted from our net revenue? Does net rev include shipping? 
+-- should refunds be added to the (day of the) order or later to the day of the refund?
+refunds AS (
+    SELECT
+        order_id,
+        -- refunds
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_refund`
+),
+
+joined AS (
+    SELECT
+        -- orders
+        orders.order_id,
+        orders.customer_id,
+        orders.total_discounts,
+        orders.total_line_items_price,
+        orders.total_price,
+        orders.total_shipping_price,
+        orders.total_subtotal_price,
+        orders.total_tax,
+        orders.created_at,
+        orders.cancelled_at,
+        orders.closed_at,
+        orders.processed_at,
+        orders.updated_at,
+        -- discounts
+        discounts.discount_code_code,
+        -- there are different kinds of discounts. Shipping discounts are only subtracted from shipping!
+        CASE WHEN discounts.discount_application_target_type = 'shipping_line' THEN discounts.discount_code_amount ELSE 0 END AS shipping_discount,
+        CASE WHEN discounts.discount_application_target_type = 'line_item' THEN discounts.discount_code_amount ELSE 0 END AS line_item_discount
+    FROM orders
+    LEFT JOIN discounts
+    ON orders.order_id = discounts.order_id
+)
+
+
+-- coalesce joined columns
+-- create cte for business logic
+
+-- Klar Definition: Net Revenue = Gross Revenue - Taxes - Refund Value
+
+-- calculating net_revenue:
+--                  total_line_items_price
+--                  - total_discounts (careful! This is only valid for discount_application_target_type != shipping_line. See order_id = 6064341483866 for an example.)
+--                  ----------------
+--                  = total_subtotal_price 
+--                      + total_shipping_price
+                        -----------------                    
+--                          - returns/refunds
+--                          -----------------
+--                          = net_revenue
+
+-- total_price is what the customer pays
+-- total_price = total_line_items_price - total_discounts + total_shipping_price + total_tax
+SELECT * FROM joined;
+
+
+[0m13:16:53.323556 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:16:54.113640 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:71eeca1b-9473-482a-9ed4-5d7a327748c9&page=queryresults
+[0m13:16:54.329264 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '13748ffb-8117-419c-81a0-a69535f71f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13675eff0>]}
+[0m13:16:54.330184 [info ] [Thread-1 (]: 5 of 5 OK created sql view model dbt_transformations_new.mrt_shopify__orders ... [[32mCREATE VIEW (0 processed)[0m in 1.02s]
+[0m13:16:54.330809 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.mrt_shopify__orders
+[0m13:16:54.332003 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:16:54.334094 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:16:54.334510 [debug] [MainThread]: Connection 'model.online_shop_dbt.mrt_shopify__orders' was properly closed.
+[0m13:16:54.335009 [info ] [MainThread]: 
+[0m13:16:54.335426 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 6.04 seconds (6.04s).
+[0m13:16:54.337042 [debug] [MainThread]: Command end result
+[0m13:16:54.365572 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m13:16:54.367164 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m13:16:54.372412 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/run_results.json
+[0m13:16:54.372671 [info ] [MainThread]: 
+[0m13:16:54.372942 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:16:54.373153 [info ] [MainThread]: 
+[0m13:16:54.373374 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m13:16:54.375870 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 7.1864204, "process_in_blocks": "0", "process_kernel_time": 0.290307, "process_mem_max_rss": "214155264", "process_out_blocks": "0", "process_user_time": 2.079125}
+[0m13:16:54.376232 [debug] [MainThread]: Command `dbt run` succeeded at 13:16:54.376159 after 7.19 seconds
+[0m13:16:54.376506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cf8800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cf8980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120cf71a0>]}
+[0m13:16:54.376781 [debug] [MainThread]: Flushing usage events
+[0m13:16:54.973050 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:17:01.592493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e771a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056f4bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056f4950>]}
+
+
+============================== 13:17:01.594730 | f02e6d04-1e2f-4fa1-b65f-3fda366f2a6c ==============================
+[0m13:17:01.594730 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:17:01.595050 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt test', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:17:02.185773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f02e6d04-1e2f-4fa1-b65f-3fda366f2a6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1031bb4d0>]}
+[0m13:17:02.219807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f02e6d04-1e2f-4fa1-b65f-3fda366f2a6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130978170>]}
+[0m13:17:02.220531 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m13:17:02.314482 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m13:17:02.382258 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:17:02.382536 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:17:02.403199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f02e6d04-1e2f-4fa1-b65f-3fda366f2a6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13099a090>]}
+[0m13:17:02.486369 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m13:17:02.488179 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m13:17:02.507795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f02e6d04-1e2f-4fa1-b65f-3fda366f2a6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105672c90>]}
+[0m13:17:02.508073 [info ] [MainThread]: Found 5 models, 8 data tests, 489 macros
+[0m13:17:02.508240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f02e6d04-1e2f-4fa1-b65f-3fda366f2a6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13092f4d0>]}
+[0m13:17:02.509209 [info ] [MainThread]: 
+[0m13:17:02.509385 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:17:02.509519 [info ] [MainThread]: 
+[0m13:17:02.509746 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:17:02.511651 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_opensource-marketing-dwh_dbt_transformations_new'
+[0m13:17:02.511830 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:17:02.825695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f02e6d04-1e2f-4fa1-b65f-3fda366f2a6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10335c650>]}
+[0m13:17:02.826439 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:17:02.829238 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7
+[0m13:17:02.829694 [info ] [Thread-1 (]: 1 of 8 START test not_null_int_shopify__order_discount__order_id_ .............. [RUN]
+[0m13:17:02.830138 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh_dbt_transformations_new, now test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7)
+[0m13:17:02.830490 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7
+[0m13:17:02.853127 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7"
+[0m13:17:02.854172 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7
+[0m13:17:02.872137 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7"
+[0m13:17:02.872872 [debug] [Thread-1 (]: On test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select `order_id`
+from `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_discount`
+where `order_id` is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:17:02.873207 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:17:03.796149 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:a767a4df-4033-4786-a126-2debfb6a9cb4&page=queryresults
+[0m13:17:04.317816 [info ] [Thread-1 (]: 1 of 8 PASS not_null_int_shopify__order_discount__order_id_ .................... [[32mPASS[0m in 1.49s]
+[0m13:17:04.318567 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7
+[0m13:17:04.319153 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b
+[0m13:17:04.319815 [info ] [Thread-1 (]: 2 of 8 START test not_null_int_shopify__order_refund__order_id_ ................ [RUN]
+[0m13:17:04.320543 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7, now test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b)
+[0m13:17:04.321083 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b
+[0m13:17:04.328632 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b"
+[0m13:17:04.329544 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b
+[0m13:17:04.332211 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b"
+[0m13:17:04.333105 [debug] [Thread-1 (]: On test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select `order_id`
+from `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_refund`
+where `order_id` is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:17:04.333518 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:17:05.183909 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:609aba2f-7277-4498-8209-141b1e6daa6f&page=queryresults
+[0m13:17:05.637336 [info ] [Thread-1 (]: 2 of 8 PASS not_null_int_shopify__order_refund__order_id_ ...................... [[32mPASS[0m in 1.32s]
+[0m13:17:05.639162 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b
+[0m13:17:05.639801 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837
+[0m13:17:05.640276 [info ] [Thread-1 (]: 3 of 8 START test not_null_stg_shopify__orders_customer_id ..................... [RUN]
+[0m13:17:05.640828 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b, now test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837)
+[0m13:17:05.641241 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837
+[0m13:17:05.646983 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837"
+[0m13:17:05.649679 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837
+[0m13:17:05.652687 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837"
+[0m13:17:05.653519 [debug] [Thread-1 (]: On test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:17:05.653922 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:17:06.241644 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:23f11707-f3e1-4dfd-b477-3d0e4662c2a8&page=queryresults
+[0m13:17:06.650240 [info ] [Thread-1 (]: 3 of 8 PASS not_null_stg_shopify__orders_customer_id ........................... [[32mPASS[0m in 1.01s]
+[0m13:17:06.651887 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837
+[0m13:17:06.652604 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab
+[0m13:17:06.653437 [info ] [Thread-1 (]: 4 of 8 START test not_null_stg_shopify__orders_order_id ........................ [RUN]
+[0m13:17:06.654789 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837, now test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab)
+[0m13:17:06.655185 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab
+[0m13:17:06.659772 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab"
+[0m13:17:06.662120 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab
+[0m13:17:06.665715 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab"
+[0m13:17:06.667075 [debug] [Thread-1 (]: On test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:17:06.667620 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:17:07.528710 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:9f4ff761-a196-498e-b3ce-8fc996a13168&page=queryresults
+[0m13:17:07.909898 [info ] [Thread-1 (]: 4 of 8 PASS not_null_stg_shopify__orders_order_id .............................. [[32mPASS[0m in 1.25s]
+[0m13:17:07.911506 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab
+[0m13:17:07.912223 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.test_total_discounts_parts
+[0m13:17:07.912951 [info ] [Thread-1 (]: 5 of 8 START test test_total_discounts_parts ................................... [RUN]
+[0m13:17:07.913648 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab, now test.online_shop_dbt.test_total_discounts_parts)
+[0m13:17:07.914049 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.test_total_discounts_parts
+[0m13:17:07.918934 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.test_total_discounts_parts"
+[0m13:17:07.920389 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.test_total_discounts_parts
+[0m13:17:07.923079 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.test_total_discounts_parts"
+[0m13:17:07.924490 [debug] [Thread-1 (]: On test.online_shop_dbt.test_total_discounts_parts: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.test_total_discounts_parts"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT
+    order_id,
+    total_discounts,
+    shipping_discount,
+    line_item_discount
+FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`mrt_shopify__orders`
+WHERE shipping_discount + line_item_discount != total_discounts
+OR total_discounts IS NULL
+OR shipping_discount IS NULL
+OR line_item_discount IS NULL
+      
+    ) dbt_internal_test
+[0m13:17:07.925498 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:17:08.961642 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:a4442723-57c3-41bf-983c-56ca7822607a&page=queryresults
+[0m13:17:09.560935 [info ] [Thread-1 (]: 5 of 8 PASS test_total_discounts_parts ......................................... [[32mPASS[0m in 1.65s]
+[0m13:17:09.562537 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.test_total_discounts_parts
+[0m13:17:09.563320 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.test_total_line_items_price_subtracting_discounts
+[0m13:17:09.563859 [info ] [Thread-1 (]: 6 of 8 START test test_total_line_items_price_subtracting_discounts ............ [RUN]
+[0m13:17:09.564296 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.test_total_discounts_parts, now test.online_shop_dbt.test_total_line_items_price_subtracting_discounts)
+[0m13:17:09.564574 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.test_total_line_items_price_subtracting_discounts
+[0m13:17:09.566788 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.test_total_line_items_price_subtracting_discounts"
+[0m13:17:09.567613 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.test_total_line_items_price_subtracting_discounts
+[0m13:17:09.570639 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.test_total_line_items_price_subtracting_discounts"
+[0m13:17:09.571696 [debug] [Thread-1 (]: On test.online_shop_dbt.test_total_line_items_price_subtracting_discounts: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.test_total_line_items_price_subtracting_discounts"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT 
+    order_id,
+    total_line_items_price,
+    total_subtotal_price,
+    line_item_discount
+FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`mrt_shopify__orders`
+WHERE total_line_items_price - line_item_discount != total_subtotal_price
+      
+    ) dbt_internal_test
+[0m13:17:09.572305 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:17:10.599883 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:412ac8be-e0c5-409e-9458-1a1f8e66da03&page=queryresults
+[0m13:17:11.053401 [error] [Thread-1 (]: 6 of 8 FAIL 4 test_total_line_items_price_subtracting_discounts ................ [[31mFAIL 4[0m in 1.49s]
+[0m13:17:11.055174 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.test_total_line_items_price_subtracting_discounts
+[0m13:17:11.056065 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.test_total_price
+[0m13:17:11.056679 [info ] [Thread-1 (]: 7 of 8 START test test_total_price ............................................. [RUN]
+[0m13:17:11.057226 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.test_total_line_items_price_subtracting_discounts, now test.online_shop_dbt.test_total_price)
+[0m13:17:11.057611 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.test_total_price
+[0m13:17:11.064977 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.test_total_price"
+[0m13:17:11.066141 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.test_total_price
+[0m13:17:11.068968 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.test_total_price"
+[0m13:17:11.069709 [debug] [Thread-1 (]: On test.online_shop_dbt.test_total_price: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.test_total_price"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT
+    order_id,
+    total_price,
+    total_line_items_price,
+    total_discounts,
+    total_shipping_price,
+    total_tax
+FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`mrt_shopify__orders`
+WHERE (total_line_items_price - total_discounts + total_shipping_price + total_tax) != total_price
+      
+    ) dbt_internal_test
+[0m13:17:11.070092 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:17:12.030929 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:7154e355-20f2-444e-a670-b5e13cfa8456&page=queryresults
+[0m13:17:12.406691 [error] [Thread-1 (]: 7 of 8 FAIL 110 test_total_price ............................................... [[31mFAIL 110[0m in 1.35s]
+[0m13:17:12.407968 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.test_total_price
+[0m13:17:12.408521 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4
+[0m13:17:12.409046 [info ] [Thread-1 (]: 8 of 8 START test unique_stg_shopify__orders_order_id .......................... [RUN]
+[0m13:17:12.409615 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.test_total_price, now test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4)
+[0m13:17:12.410064 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4
+[0m13:17:12.418614 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4"
+[0m13:17:12.419813 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4
+[0m13:17:12.422898 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4"
+[0m13:17:12.423953 [debug] [Thread-1 (]: On test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select order_id as unique_field
+  from `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+  where order_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m13:17:12.424534 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:17:13.275715 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:d9787b50-1ab7-4a5a-beb9-61094bd9de2f&page=queryresults
+[0m13:17:13.683451 [info ] [Thread-1 (]: 8 of 8 PASS unique_stg_shopify__orders_order_id ................................ [[32mPASS[0m in 1.27s]
+[0m13:17:13.684856 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4
+[0m13:17:13.686344 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:17:13.689084 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:17:13.689566 [debug] [MainThread]: Connection 'test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4' was properly closed.
+[0m13:17:13.690007 [info ] [MainThread]: 
+[0m13:17:13.690488 [info ] [MainThread]: Finished running 8 data tests in 0 hours 0 minutes and 11.18 seconds (11.18s).
+[0m13:17:13.692268 [debug] [MainThread]: Command end result
+[0m13:17:13.723577 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m13:17:13.725162 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m13:17:13.731331 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/run_results.json
+[0m13:17:13.731596 [info ] [MainThread]: 
+[0m13:17:13.731950 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m13:17:13.732202 [info ] [MainThread]: 
+[0m13:17:13.732494 [error] [MainThread]: [31mFailure in test test_total_line_items_price_subtracting_discounts (online_shop_dbt/tests/test_total_line_items_price_subtracting_discounts.sql)[0m
+[0m13:17:13.732828 [error] [MainThread]:   Got 4 results, configured to fail if != 0
+[0m13:17:13.733037 [info ] [MainThread]: 
+[0m13:17:13.733283 [info ] [MainThread]:   compiled code at target/compiled/online_shop_dbt/online_shop_dbt/tests/test_total_line_items_price_subtracting_discounts.sql
+[0m13:17:13.733491 [info ] [MainThread]: 
+[0m13:17:13.733730 [error] [MainThread]: [31mFailure in test test_total_price (online_shop_dbt/tests/test_total_price.sql)[0m
+[0m13:17:13.733958 [error] [MainThread]:   Got 110 results, configured to fail if != 0
+[0m13:17:13.734138 [info ] [MainThread]: 
+[0m13:17:13.734362 [info ] [MainThread]:   compiled code at target/compiled/online_shop_dbt/online_shop_dbt/tests/test_total_price.sql
+[0m13:17:13.734556 [info ] [MainThread]: 
+[0m13:17:13.734772 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=2 SKIP=0 TOTAL=8
+[0m13:17:13.737324 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 12.181829, "process_in_blocks": "0", "process_kernel_time": 0.274685, "process_mem_max_rss": "213319680", "process_out_blocks": "0", "process_user_time": 2.260244}
+[0m13:17:13.737703 [debug] [MainThread]: Command `dbt test` failed at 13:17:13.737636 after 12.18 seconds
+[0m13:17:13.737990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056f4c80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056f4bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056f4950>]}
+[0m13:17:13.738256 [debug] [MainThread]: Flushing usage events
+[0m13:17:14.185508 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:20:12.119988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064f41d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108334c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108334950>]}
+
+
+============================== 13:20:12.123029 | 09b98ead-449a-4be8-9147-1c2ab7467c89 ==============================
+[0m13:20:12.123029 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:20:12.123354 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:20:12.771234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '09b98ead-449a-4be8-9147-1c2ab7467c89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd1e600>]}
+[0m13:20:12.806070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '09b98ead-449a-4be8-9147-1c2ab7467c89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd96870>]}
+[0m13:20:12.806416 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m13:20:12.894953 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m13:20:12.961751 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m13:20:12.962100 [debug] [MainThread]: Partial parsing: updated file: online_shop_dbt://online_shop_dbt/tests/test_total_line_items_price_subtracting_discounts.sql
+[0m13:20:12.962290 [debug] [MainThread]: Partial parsing: updated file: online_shop_dbt://online_shop_dbt/tests/test_total_price.sql
+[0m13:20:13.104520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '09b98ead-449a-4be8-9147-1c2ab7467c89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e8ed8e0>]}
+[0m13:20:13.145243 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m13:20:13.147152 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m13:20:13.166560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '09b98ead-449a-4be8-9147-1c2ab7467c89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082b6480>]}
+[0m13:20:13.166840 [info ] [MainThread]: Found 5 models, 8 data tests, 489 macros
+[0m13:20:13.167016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '09b98ead-449a-4be8-9147-1c2ab7467c89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e9739b0>]}
+[0m13:20:13.167998 [info ] [MainThread]: 
+[0m13:20:13.168170 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:20:13.168307 [info ] [MainThread]: 
+[0m13:20:13.168534 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:20:13.170447 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_opensource-marketing-dwh_dbt_transformations_new'
+[0m13:20:13.170630 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:20:13.464208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '09b98ead-449a-4be8-9147-1c2ab7467c89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e315bb0>]}
+[0m13:20:13.465557 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:20:13.469747 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7
+[0m13:20:13.470186 [info ] [Thread-1 (]: 1 of 8 START test not_null_int_shopify__order_discount__order_id_ .............. [RUN]
+[0m13:20:13.470627 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh_dbt_transformations_new, now test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7)
+[0m13:20:13.470996 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7
+[0m13:20:13.491208 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7"
+[0m13:20:13.494103 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7
+[0m13:20:13.511236 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7"
+[0m13:20:13.512103 [debug] [Thread-1 (]: On test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select `order_id`
+from `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_discount`
+where `order_id` is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:20:13.512443 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:20:14.288819 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:fd911529-fb3f-42eb-ba69-8b258674e51d&page=queryresults
+[0m13:20:14.765717 [info ] [Thread-1 (]: 1 of 8 PASS not_null_int_shopify__order_discount__order_id_ .................... [[32mPASS[0m in 1.29s]
+[0m13:20:14.766434 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7
+[0m13:20:14.766843 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b
+[0m13:20:14.767283 [info ] [Thread-1 (]: 2 of 8 START test not_null_int_shopify__order_refund__order_id_ ................ [RUN]
+[0m13:20:14.767791 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7, now test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b)
+[0m13:20:14.768161 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b
+[0m13:20:14.772106 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b"
+[0m13:20:14.773514 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b
+[0m13:20:14.775734 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b"
+[0m13:20:14.776490 [debug] [Thread-1 (]: On test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select `order_id`
+from `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_refund`
+where `order_id` is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:20:14.776877 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:20:15.471336 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:129f1948-7c46-44c6-8d13-2bbf20b370cc&page=queryresults
+[0m13:20:16.050769 [info ] [Thread-1 (]: 2 of 8 PASS not_null_int_shopify__order_refund__order_id_ ...................... [[32mPASS[0m in 1.28s]
+[0m13:20:16.052113 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b
+[0m13:20:16.052749 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837
+[0m13:20:16.053202 [info ] [Thread-1 (]: 3 of 8 START test not_null_stg_shopify__orders_customer_id ..................... [RUN]
+[0m13:20:16.053739 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b, now test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837)
+[0m13:20:16.054253 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837
+[0m13:20:16.060387 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837"
+[0m13:20:16.062136 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837
+[0m13:20:16.065136 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837"
+[0m13:20:16.065973 [debug] [Thread-1 (]: On test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:20:16.066375 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:20:16.765146 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:6be5ebc3-57ff-4503-b336-e033a5c92b01&page=queryresults
+[0m13:20:17.176953 [info ] [Thread-1 (]: 3 of 8 PASS not_null_stg_shopify__orders_customer_id ........................... [[32mPASS[0m in 1.12s]
+[0m13:20:17.178335 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837
+[0m13:20:17.179172 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab
+[0m13:20:17.180335 [info ] [Thread-1 (]: 4 of 8 START test not_null_stg_shopify__orders_order_id ........................ [RUN]
+[0m13:20:17.181306 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837, now test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab)
+[0m13:20:17.181995 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab
+[0m13:20:17.187702 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab"
+[0m13:20:17.190333 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab
+[0m13:20:17.193667 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab"
+[0m13:20:17.194907 [debug] [Thread-1 (]: On test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:20:17.195355 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:20:17.891474 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:1b3e5ccf-26f3-445a-8bd0-c780465cc13e&page=queryresults
+[0m13:20:18.295520 [info ] [Thread-1 (]: 4 of 8 PASS not_null_stg_shopify__orders_order_id .............................. [[32mPASS[0m in 1.11s]
+[0m13:20:18.297043 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab
+[0m13:20:18.297860 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.test_total_discounts_parts
+[0m13:20:18.298898 [info ] [Thread-1 (]: 5 of 8 START test test_total_discounts_parts ................................... [RUN]
+[0m13:20:18.299504 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab, now test.online_shop_dbt.test_total_discounts_parts)
+[0m13:20:18.299896 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.test_total_discounts_parts
+[0m13:20:18.306672 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.test_total_discounts_parts"
+[0m13:20:18.307673 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.test_total_discounts_parts
+[0m13:20:18.311720 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.test_total_discounts_parts"
+[0m13:20:18.312551 [debug] [Thread-1 (]: On test.online_shop_dbt.test_total_discounts_parts: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.test_total_discounts_parts"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT
+    order_id,
+    total_discounts,
+    shipping_discount,
+    line_item_discount
+FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`mrt_shopify__orders`
+WHERE shipping_discount + line_item_discount != total_discounts
+OR total_discounts IS NULL
+OR shipping_discount IS NULL
+OR line_item_discount IS NULL
+      
+    ) dbt_internal_test
+[0m13:20:18.312957 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:20:19.071558 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:9b3c58b9-6976-4829-8fd2-4e188d29e9c7&page=queryresults
+[0m13:20:19.508926 [info ] [Thread-1 (]: 5 of 8 PASS test_total_discounts_parts ......................................... [[32mPASS[0m in 1.21s]
+[0m13:20:19.510315 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.test_total_discounts_parts
+[0m13:20:19.511000 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.test_total_line_items_price_subtracting_discounts
+[0m13:20:19.511964 [info ] [Thread-1 (]: 6 of 8 START test test_total_line_items_price_subtracting_discounts ............ [RUN]
+[0m13:20:19.512580 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.test_total_discounts_parts, now test.online_shop_dbt.test_total_line_items_price_subtracting_discounts)
+[0m13:20:19.512962 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.test_total_line_items_price_subtracting_discounts
+[0m13:20:19.516608 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.test_total_line_items_price_subtracting_discounts"
+[0m13:20:19.517676 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.test_total_line_items_price_subtracting_discounts
+[0m13:20:19.520196 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.test_total_line_items_price_subtracting_discounts"
+[0m13:20:19.520948 [debug] [Thread-1 (]: On test.online_shop_dbt.test_total_line_items_price_subtracting_discounts: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.test_total_line_items_price_subtracting_discounts"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT 
+    order_id,
+    total_line_items_price,
+    total_subtotal_price,
+    line_item_discount
+FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`mrt_shopify__orders`
+WHERE ROUND((total_line_items_price - line_item_discount), 2) != total_subtotal_price
+      
+    ) dbt_internal_test
+[0m13:20:19.521354 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:20:20.556075 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:ddea3b42-5add-41ca-9f99-c9cc99122ffe&page=queryresults
+[0m13:20:20.938596 [info ] [Thread-1 (]: 6 of 8 PASS test_total_line_items_price_subtracting_discounts .................. [[32mPASS[0m in 1.43s]
+[0m13:20:20.939925 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.test_total_line_items_price_subtracting_discounts
+[0m13:20:20.940582 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.test_total_price
+[0m13:20:20.941175 [info ] [Thread-1 (]: 7 of 8 START test test_total_price ............................................. [RUN]
+[0m13:20:20.941810 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.test_total_line_items_price_subtracting_discounts, now test.online_shop_dbt.test_total_price)
+[0m13:20:20.942295 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.test_total_price
+[0m13:20:20.947061 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.test_total_price"
+[0m13:20:20.947886 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.test_total_price
+[0m13:20:20.951636 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.test_total_price"
+[0m13:20:20.952606 [debug] [Thread-1 (]: On test.online_shop_dbt.test_total_price: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.test_total_price"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT
+    order_id,
+    total_price,
+    total_line_items_price,
+    total_discounts,
+    total_shipping_price,
+    total_tax
+FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`mrt_shopify__orders`
+WHERE ROUND((total_line_items_price - total_discounts + total_shipping_price + total_tax), 2) != total_price
+      
+    ) dbt_internal_test
+[0m13:20:20.953507 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:20:21.988181 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:12eb3d2e-696f-4a8b-b293-cf230c8cf070&page=queryresults
+[0m13:20:22.460246 [error] [Thread-1 (]: 7 of 8 FAIL 109 test_total_price ............................................... [[31mFAIL 109[0m in 1.52s]
+[0m13:20:22.461945 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.test_total_price
+[0m13:20:22.463035 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4
+[0m13:20:22.463895 [info ] [Thread-1 (]: 8 of 8 START test unique_stg_shopify__orders_order_id .......................... [RUN]
+[0m13:20:22.464882 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.test_total_price, now test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4)
+[0m13:20:22.465561 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4
+[0m13:20:22.473262 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4"
+[0m13:20:22.474565 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4
+[0m13:20:22.477283 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4"
+[0m13:20:22.478246 [debug] [Thread-1 (]: On test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select order_id as unique_field
+  from `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+  where order_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m13:20:22.478690 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:20:23.011581 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:82b925b3-2ebb-4ddc-a3fe-f40b6181d9f3&page=queryresults
+[0m13:20:23.431135 [info ] [Thread-1 (]: 8 of 8 PASS unique_stg_shopify__orders_order_id ................................ [[32mPASS[0m in 0.97s]
+[0m13:20:23.432628 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4
+[0m13:20:23.434623 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:20:23.437920 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:20:23.438469 [debug] [MainThread]: Connection 'test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4' was properly closed.
+[0m13:20:23.438988 [info ] [MainThread]: 
+[0m13:20:23.439448 [info ] [MainThread]: Finished running 8 data tests in 0 hours 0 minutes and 10.27 seconds (10.27s).
+[0m13:20:23.441582 [debug] [MainThread]: Command end result
+[0m13:20:23.471697 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m13:20:23.473436 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m13:20:23.479394 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/run_results.json
+[0m13:20:23.479669 [info ] [MainThread]: 
+[0m13:20:23.479941 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m13:20:23.480166 [info ] [MainThread]: 
+[0m13:20:23.480441 [error] [MainThread]: [31mFailure in test test_total_price (online_shop_dbt/tests/test_total_price.sql)[0m
+[0m13:20:23.480685 [error] [MainThread]:   Got 109 results, configured to fail if != 0
+[0m13:20:23.480877 [info ] [MainThread]: 
+[0m13:20:23.481119 [info ] [MainThread]:   compiled code at target/compiled/online_shop_dbt/online_shop_dbt/tests/test_total_price.sql
+[0m13:20:23.481317 [info ] [MainThread]: 
+[0m13:20:23.481533 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=1 SKIP=0 TOTAL=8
+[0m13:20:23.484126 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 11.406396, "process_in_blocks": "0", "process_kernel_time": 0.301439, "process_mem_max_rss": "216186880", "process_out_blocks": "0", "process_user_time": 2.350878}
+[0m13:20:23.484424 [debug] [MainThread]: Command `dbt test` failed at 13:20:23.484363 after 11.41 seconds
+[0m13:20:23.484688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083349e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e442060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107777410>]}
+[0m13:20:23.484941 [debug] [MainThread]: Flushing usage events
+[0m13:20:23.957334 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:25:48.429586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f413d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084f8950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084f8680>]}
+
+
+============================== 13:25:48.432784 | d5a496fc-1b9a-4080-ba18-41e77c4896ef ==============================
+[0m13:25:48.432784 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:25:48.433116 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --select mrt_shopify__orders', 'send_anonymous_usage_stats': 'True'}
+[0m13:25:49.092344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd5a496fc-1b9a-4080-ba18-41e77c4896ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e5a7a10>]}
+[0m13:25:49.126864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd5a496fc-1b9a-4080-ba18-41e77c4896ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e65bf20>]}
+[0m13:25:49.127194 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m13:25:49.214517 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m13:25:49.286101 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:25:49.286333 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:25:49.307195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd5a496fc-1b9a-4080-ba18-41e77c4896ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ccee1e0>]}
+[0m13:25:49.391405 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m13:25:49.393440 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m13:25:49.406891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd5a496fc-1b9a-4080-ba18-41e77c4896ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6a5eb0>]}
+[0m13:25:49.407142 [info ] [MainThread]: Found 5 models, 8 data tests, 489 macros
+[0m13:25:49.407307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd5a496fc-1b9a-4080-ba18-41e77c4896ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1014c0>]}
+[0m13:25:49.408071 [info ] [MainThread]: 
+[0m13:25:49.408231 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:25:49.408359 [info ] [MainThread]: 
+[0m13:25:49.408581 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:25:49.408983 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_opensource-marketing-dwh'
+[0m13:25:49.409163 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:25:49.884901 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh, now list_opensource-marketing-dwh_dbt_transformations_new)
+[0m13:25:49.885625 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:25:50.238346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd5a496fc-1b9a-4080-ba18-41e77c4896ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6a7b90>]}
+[0m13:25:50.239517 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:25:50.242637 [debug] [Thread-1 (]: Began running node model.online_shop_dbt.mrt_shopify__orders
+[0m13:25:50.243267 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_transformations_new.mrt_shopify__orders ........ [RUN]
+[0m13:25:50.243712 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh_dbt_transformations_new, now model.online_shop_dbt.mrt_shopify__orders)
+[0m13:25:50.244056 [debug] [Thread-1 (]: Began compiling node model.online_shop_dbt.mrt_shopify__orders
+[0m13:25:50.259916 [debug] [Thread-1 (]: Writing injected SQL for node "model.online_shop_dbt.mrt_shopify__orders"
+[0m13:25:50.262906 [debug] [Thread-1 (]: Began executing node model.online_shop_dbt.mrt_shopify__orders
+[0m13:25:50.327834 [debug] [Thread-1 (]: Writing runtime sql for node "model.online_shop_dbt.mrt_shopify__orders"
+[0m13:25:50.328633 [debug] [Thread-1 (]: On model.online_shop_dbt.mrt_shopify__orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "model.online_shop_dbt.mrt_shopify__orders"} */
+
+
+  create or replace view `opensource-marketing-dwh`.`dbt_transformations_new`.`mrt_shopify__orders`
+  OPTIONS()
+  as WITH orders AS (
+    SELECT
+        order_id,
+        customer_id,
+        total_discounts,
+        total_line_items_price,
+        total_price,
+        total_shipping_price,
+        total_subtotal_price,
+        total_tax,
+
+        created_at,
+        cancelled_at,
+        closed_at,
+        processed_at,
+        updated_at,
+        discount_application_allocation_method,
+        discount_application_code,
+        discount_application_target_selection,
+        discount_application_target_type,
+        discount_application_type,
+        discount_application_value,
+        discount_application_value_type,
+        discount_application_title,
+        discount_application_description,
+        discount_code_amount,
+        discount_code_code,
+        discount_code_type,
+        landing_site,
+        base_url,
+        utm_source,
+        utm_medium,
+        utm_campaign,
+        utm_content,
+        utm_term,
+        fbclid,
+        campaign_id,
+        order_adjustment_amount,
+        order_adjustment_id,
+        order_adjustment_uid,
+        order_adjustment_kind,
+        order_adjustment_reason,
+        order_adjustment_refund_id,
+        order_adjustment_refund_uid,
+        order_adjustment_tax_amount,
+        payment_gateway_names,
+        presentment_currency,
+        referring_site,
+        refund_line_item_created_at,
+        refund_line_item_order_line_item_id,
+        refund_line_item_processed_at,
+        refund_line_item_quantity,
+        refund_line_item_refund_id,
+        refund_line_item_refund_line_item_id,
+        refund_line_item_restock,
+        refund_line_item_restock_type,
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status,
+        shipping_line_discount_allocations_index,
+        shipping_line_discount_amount,
+        shipping_line_discounted_price,
+        shipping_line_id,
+        shipping_line_uid,
+        shipping_line_price,
+        shipping_line_source,
+        shipping_line_tax_lines_price,
+        shipping_line_tax_lines_rate,
+        shipping_line_tax_lines_title,
+        shipping_line_title,
+        tax_line_price,
+        tax_line_rate,
+        tax_line_title,
+        taxes_included,
+        test
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__orders`
+),
+
+-- if discount_application_target_type = shipping_line, then the discount is only subtracted from the shipping!
+discounts AS (
+    SELECT
+        order_id,
+        discount_application_target_type,
+        discount_application_allocation_method,
+        discount_application_code,
+        discount_application_target_selection,
+        discount_application_type,
+        discount_application_value,
+
+        discount_application_value_type,
+        discount_application_title,
+        discount_application_description,
+        discount_code_code,
+        discount_code_type,
+        discount_code_amount,
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_discount`
+),
+
+-- should a refunded shipping be subtracted from our net revenue? Does net rev include shipping? 
+-- should refunds be added to the (day of the) order or later to the day of the refund?
+refunds AS (
+    SELECT
+        order_id,
+        -- refunds
+        refund_transactions_id,
+        refund_transactions_amount,
+        refund_transactions_created_at,
+        refund_transactions_kind,
+        refund_transactions_status
+    FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_refund`
+),
+
+joined AS (
+    SELECT
+        -- orders
+        orders.order_id,
+        orders.customer_id,
+        orders.total_discounts,
+        orders.total_line_items_price,
+        orders.total_price,
+        orders.total_shipping_price,
+        orders.total_subtotal_price,
+        orders.total_tax,
+        orders.taxes_included,
+        orders.created_at,
+        orders.cancelled_at,
+        orders.closed_at,
+        orders.processed_at,
+        orders.updated_at,
+        -- discounts
+        discounts.discount_code_code,
+        -- there are different kinds of discounts. Shipping discounts are only subtracted from shipping!
+        CASE WHEN discounts.discount_application_target_type = 'shipping_line' THEN discounts.discount_code_amount ELSE 0 END AS shipping_discount,
+        CASE WHEN discounts.discount_application_target_type = 'line_item' THEN discounts.discount_code_amount ELSE 0 END AS line_item_discount
+    FROM orders
+    LEFT JOIN discounts
+    ON orders.order_id = discounts.order_id
+)
+
+
+-- coalesce joined columns
+-- create cte for business logic
+
+-- Klar Definition: Net Revenue = Gross Revenue - Taxes - Refund Value
+
+-- calculating net_revenue:
+--                  total_line_items_price
+--                  - total_discounts (careful! This is only valid for discount_application_target_type != shipping_line. See order_id = 6064341483866 for an example.)
+--                  ----------------
+--                  = total_subtotal_price 
+--                      + total_shipping_price
+                        -----------------                    
+--                          - returns/refunds
+--                          -----------------
+--                          = net_revenue
+
+-- total_price is what the customer pays
+-- total_price = total_line_items_price - total_discounts + total_shipping_price + total_tax
+SELECT * FROM joined;
+
+
+[0m13:25:50.328997 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:25:51.105712 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:6c209328-e7d7-4f56-b42e-b99b7d3f85f0&page=queryresults
+[0m13:25:51.390627 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5a496fc-1b9a-4080-ba18-41e77c4896ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e4d5d90>]}
+[0m13:25:51.391139 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dbt_transformations_new.mrt_shopify__orders ... [[32mCREATE VIEW (0 processed)[0m in 1.15s]
+[0m13:25:51.391555 [debug] [Thread-1 (]: Finished running node model.online_shop_dbt.mrt_shopify__orders
+[0m13:25:51.392307 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:25:51.393549 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:25:51.393772 [debug] [MainThread]: Connection 'model.online_shop_dbt.mrt_shopify__orders' was properly closed.
+[0m13:25:51.393966 [info ] [MainThread]: 
+[0m13:25:51.394146 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.99 seconds (1.99s).
+[0m13:25:51.394521 [debug] [MainThread]: Command end result
+[0m13:25:51.411744 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m13:25:51.412731 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m13:25:51.416044 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/run_results.json
+[0m13:25:51.416241 [info ] [MainThread]: 
+[0m13:25:51.416470 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:25:51.416625 [info ] [MainThread]: 
+[0m13:25:51.416784 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m13:25:51.418678 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.0311863, "process_in_blocks": "0", "process_kernel_time": 0.257858, "process_mem_max_rss": "209797120", "process_out_blocks": "0", "process_user_time": 1.626075}
+[0m13:25:51.418939 [debug] [MainThread]: Command `dbt run` succeeded at 13:25:51.418888 after 3.03 seconds
+[0m13:25:51.419143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eac3fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e2b7140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107936870>]}
+[0m13:25:51.419343 [debug] [MainThread]: Flushing usage events
+[0m13:25:51.893063 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:29:26.980753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a7c8740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11aaf8a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11aaf87a0>]}
+
+
+============================== 13:29:26.983905 | e8032128-118e-4a77-8937-6c47e5fe1b89 ==============================
+[0m13:29:26.983905 [info ] [MainThread]: Running with dbt=1.9.1
+[0m13:29:26.984234 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/friedrichtenhagen/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt test', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:29:27.641291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e8032128-118e-4a77-8937-6c47e5fe1b89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12fcb66f0>]}
+[0m13:29:27.675543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e8032128-118e-4a77-8937-6c47e5fe1b89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f3d1df0>]}
+[0m13:29:27.675873 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m13:29:27.762739 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m13:29:27.831400 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:29:27.831760 [debug] [MainThread]: Partial parsing: updated file: online_shop_dbt://online_shop_dbt/tests/test_total_price.sql
+[0m13:29:27.965297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e8032128-118e-4a77-8937-6c47e5fe1b89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12fafd8e0>]}
+[0m13:29:28.006549 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m13:29:28.008694 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m13:29:28.029329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e8032128-118e-4a77-8937-6c47e5fe1b89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12fc8a4e0>]}
+[0m13:29:28.029609 [info ] [MainThread]: Found 5 models, 8 data tests, 489 macros
+[0m13:29:28.029783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8032128-118e-4a77-8937-6c47e5fe1b89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12fe4ef00>]}
+[0m13:29:28.030757 [info ] [MainThread]: 
+[0m13:29:28.030920 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:29:28.031053 [info ] [MainThread]: 
+[0m13:29:28.031280 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:29:28.033184 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_opensource-marketing-dwh_dbt_transformations_new'
+[0m13:29:28.033367 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:29:28.322995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8032128-118e-4a77-8937-6c47e5fe1b89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12fe18ad0>]}
+[0m13:29:28.323453 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:29:28.325496 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7
+[0m13:29:28.325811 [info ] [Thread-1 (]: 1 of 8 START test not_null_int_shopify__order_discount__order_id_ .............. [RUN]
+[0m13:29:28.326118 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_opensource-marketing-dwh_dbt_transformations_new, now test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7)
+[0m13:29:28.326352 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7
+[0m13:29:28.338544 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7"
+[0m13:29:28.340191 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7
+[0m13:29:28.351614 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7"
+[0m13:29:28.352137 [debug] [Thread-1 (]: On test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select `order_id`
+from `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_discount`
+where `order_id` is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:29:28.352383 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:29:29.117559 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:a116a90e-ef2f-44d5-a27d-ecb80bb98032&page=queryresults
+[0m13:29:29.557535 [info ] [Thread-1 (]: 1 of 8 PASS not_null_int_shopify__order_discount__order_id_ .................... [[32mPASS[0m in 1.23s]
+[0m13:29:29.558076 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7
+[0m13:29:29.558388 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b
+[0m13:29:29.558752 [info ] [Thread-1 (]: 2 of 8 START test not_null_int_shopify__order_refund__order_id_ ................ [RUN]
+[0m13:29:29.559150 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.not_null_int_shopify__order_discount__order_id_.79a9d2fcc7, now test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b)
+[0m13:29:29.559445 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b
+[0m13:29:29.563209 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b"
+[0m13:29:29.563746 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b
+[0m13:29:29.565724 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b"
+[0m13:29:29.566421 [debug] [Thread-1 (]: On test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select `order_id`
+from `opensource-marketing-dwh`.`dbt_transformations_new`.`int_shopify__order_refund`
+where `order_id` is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:29:29.566750 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:29:30.346365 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:94269137-75c4-4221-8547-fea52be41dc2&page=queryresults
+[0m13:29:30.740024 [info ] [Thread-1 (]: 2 of 8 PASS not_null_int_shopify__order_refund__order_id_ ...................... [[32mPASS[0m in 1.18s]
+[0m13:29:30.741809 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b
+[0m13:29:30.742541 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837
+[0m13:29:30.743355 [info ] [Thread-1 (]: 3 of 8 START test not_null_stg_shopify__orders_customer_id ..................... [RUN]
+[0m13:29:30.744185 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.not_null_int_shopify__order_refund__order_id_.09c5f8044b, now test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837)
+[0m13:29:30.744617 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837
+[0m13:29:30.751315 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837"
+[0m13:29:30.753515 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837
+[0m13:29:30.756718 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837"
+[0m13:29:30.757530 [debug] [Thread-1 (]: On test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:29:30.757954 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:29:31.472920 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:207c7661-781a-456c-b786-6c6affcc4486&page=queryresults
+[0m13:29:31.882955 [info ] [Thread-1 (]: 3 of 8 PASS not_null_stg_shopify__orders_customer_id ........................... [[32mPASS[0m in 1.14s]
+[0m13:29:31.884909 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837
+[0m13:29:31.885636 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab
+[0m13:29:31.886419 [info ] [Thread-1 (]: 4 of 8 START test not_null_stg_shopify__orders_order_id ........................ [RUN]
+[0m13:29:31.887156 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.not_null_stg_shopify__orders_customer_id.672ff7c837, now test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab)
+[0m13:29:31.887559 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab
+[0m13:29:31.893347 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab"
+[0m13:29:31.894076 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab
+[0m13:29:31.897527 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab"
+[0m13:29:31.898610 [debug] [Thread-1 (]: On test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:29:31.899075 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:29:32.701215 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:e58fb601-ac67-4a3b-8872-9482130e363a&page=queryresults
+[0m13:29:33.043668 [info ] [Thread-1 (]: 4 of 8 PASS not_null_stg_shopify__orders_order_id .............................. [[32mPASS[0m in 1.16s]
+[0m13:29:33.044991 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab
+[0m13:29:33.045682 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.test_total_discounts_parts
+[0m13:29:33.046229 [info ] [Thread-1 (]: 5 of 8 START test test_total_discounts_parts ................................... [RUN]
+[0m13:29:33.046795 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.not_null_stg_shopify__orders_order_id.3b0e715aab, now test.online_shop_dbt.test_total_discounts_parts)
+[0m13:29:33.047274 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.test_total_discounts_parts
+[0m13:29:33.054047 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.test_total_discounts_parts"
+[0m13:29:33.054985 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.test_total_discounts_parts
+[0m13:29:33.058005 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.test_total_discounts_parts"
+[0m13:29:33.058880 [debug] [Thread-1 (]: On test.online_shop_dbt.test_total_discounts_parts: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.test_total_discounts_parts"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT
+    order_id,
+    total_discounts,
+    shipping_discount,
+    line_item_discount
+FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`mrt_shopify__orders`
+WHERE shipping_discount + line_item_discount != total_discounts
+OR total_discounts IS NULL
+OR shipping_discount IS NULL
+OR line_item_discount IS NULL
+      
+    ) dbt_internal_test
+[0m13:29:33.059306 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:29:34.135318 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:ab7c26f5-7fcd-4e05-904d-6cbf8ff6297e&page=queryresults
+[0m13:29:34.558315 [info ] [Thread-1 (]: 5 of 8 PASS test_total_discounts_parts ......................................... [[32mPASS[0m in 1.51s]
+[0m13:29:34.559463 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.test_total_discounts_parts
+[0m13:29:34.560400 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.test_total_line_items_price_subtracting_discounts
+[0m13:29:34.561023 [info ] [Thread-1 (]: 6 of 8 START test test_total_line_items_price_subtracting_discounts ............ [RUN]
+[0m13:29:34.561727 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.test_total_discounts_parts, now test.online_shop_dbt.test_total_line_items_price_subtracting_discounts)
+[0m13:29:34.562280 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.test_total_line_items_price_subtracting_discounts
+[0m13:29:34.566798 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.test_total_line_items_price_subtracting_discounts"
+[0m13:29:34.568387 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.test_total_line_items_price_subtracting_discounts
+[0m13:29:34.572962 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.test_total_line_items_price_subtracting_discounts"
+[0m13:29:34.574770 [debug] [Thread-1 (]: On test.online_shop_dbt.test_total_line_items_price_subtracting_discounts: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.test_total_line_items_price_subtracting_discounts"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT 
+    order_id,
+    total_line_items_price,
+    total_subtotal_price,
+    line_item_discount
+FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`mrt_shopify__orders`
+WHERE ROUND((total_line_items_price - line_item_discount), 2) != total_subtotal_price
+      
+    ) dbt_internal_test
+[0m13:29:34.575184 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:29:35.669223 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:961695ca-49f6-4404-9997-d06c0602bcca&page=queryresults
+[0m13:29:36.024275 [info ] [Thread-1 (]: 6 of 8 PASS test_total_line_items_price_subtracting_discounts .................. [[32mPASS[0m in 1.46s]
+[0m13:29:36.025701 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.test_total_line_items_price_subtracting_discounts
+[0m13:29:36.026451 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.test_total_price
+[0m13:29:36.027063 [info ] [Thread-1 (]: 7 of 8 START test test_total_price ............................................. [RUN]
+[0m13:29:36.027820 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.test_total_line_items_price_subtracting_discounts, now test.online_shop_dbt.test_total_price)
+[0m13:29:36.028385 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.test_total_price
+[0m13:29:36.031989 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.test_total_price"
+[0m13:29:36.032821 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.test_total_price
+[0m13:29:36.035972 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.test_total_price"
+[0m13:29:36.037004 [debug] [Thread-1 (]: On test.online_shop_dbt.test_total_price: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.test_total_price"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT
+    order_id,
+    total_price,
+    total_line_items_price,
+    total_discounts,
+    total_shipping_price,
+    total_tax,
+    taxes_included
+FROM `opensource-marketing-dwh`.`dbt_transformations_new`.`mrt_shopify__orders`
+WHERE ROUND(
+    (total_line_items_price - total_discounts + total_shipping_price + 
+        (CASE WHEN taxes_included IS TRUE THEN 0 ELSE total_tax END) -- exclude the taxes if they are already included
+    )
+    , 2) 
+    != total_price
+      
+    ) dbt_internal_test
+[0m13:29:36.037420 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:29:37.002481 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:d5f23cf8-4f7e-48c5-b929-a0b356dea7bf&page=queryresults
+[0m13:29:37.407591 [info ] [Thread-1 (]: 7 of 8 PASS test_total_price ................................................... [[32mPASS[0m in 1.38s]
+[0m13:29:37.409224 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.test_total_price
+[0m13:29:37.410000 [debug] [Thread-1 (]: Began running node test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4
+[0m13:29:37.411183 [info ] [Thread-1 (]: 8 of 8 START test unique_stg_shopify__orders_order_id .......................... [RUN]
+[0m13:29:37.412105 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.online_shop_dbt.test_total_price, now test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4)
+[0m13:29:37.412590 [debug] [Thread-1 (]: Began compiling node test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4
+[0m13:29:37.421325 [debug] [Thread-1 (]: Writing injected SQL for node "test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4"
+[0m13:29:37.423406 [debug] [Thread-1 (]: Began executing node test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4
+[0m13:29:37.426026 [debug] [Thread-1 (]: Writing runtime sql for node "test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4"
+[0m13:29:37.427071 [debug] [Thread-1 (]: On test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "online_shop_dbt", "target_name": "dev", "node_id": "test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select order_id as unique_field
+  from `opensource-marketing-dwh`.`dbt_transformations_new`.`stg_shopify__orders`
+  where order_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m13:29:37.427498 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:29:38.025900 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=opensource-marketing-dwh&j=bq:europe-west1:2fb1e189-dd20-49f9-b0ab-bcef8949661e&page=queryresults
+[0m13:29:38.394070 [info ] [Thread-1 (]: 8 of 8 PASS unique_stg_shopify__orders_order_id ................................ [[32mPASS[0m in 0.98s]
+[0m13:29:38.394579 [debug] [Thread-1 (]: Finished running node test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4
+[0m13:29:38.395353 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:29:38.396956 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:29:38.397401 [debug] [MainThread]: Connection 'test.online_shop_dbt.unique_stg_shopify__orders_order_id.353c2372b4' was properly closed.
+[0m13:29:38.397835 [info ] [MainThread]: 
+[0m13:29:38.398272 [info ] [MainThread]: Finished running 8 data tests in 0 hours 0 minutes and 10.37 seconds (10.37s).
+[0m13:29:38.399979 [debug] [MainThread]: Command end result
+[0m13:29:38.429242 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/manifest.json
+[0m13:29:38.430877 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/semantic_manifest.json
+[0m13:29:38.436357 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/friedrichtenhagen/coding/online_shop_efficiency_analysis/transformation/target/run_results.json
+[0m13:29:38.436622 [info ] [MainThread]: 
+[0m13:29:38.436895 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:29:38.437107 [info ] [MainThread]: 
+[0m13:29:38.437341 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[0m13:29:38.439573 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 11.502979, "process_in_blocks": "0", "process_kernel_time": 0.297597, "process_mem_max_rss": "214401024", "process_out_blocks": "0", "process_user_time": 2.271488}
+[0m13:29:38.439857 [debug] [MainThread]: Command `dbt test` succeeded at 13:29:38.439802 after 11.50 seconds
+[0m13:29:38.440101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11aaf8800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f2e94c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12fcdbb00>]}
+[0m13:29:38.440328 [debug] [MainThread]: Flushing usage events
+[0m13:29:38.900642 [debug] [MainThread]: An error was encountered while trying to flush usage events

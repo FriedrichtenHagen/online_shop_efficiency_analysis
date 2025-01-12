@@ -1,4 +1,4 @@
-WITH int_shopify__orders AS (
+WITH orders AS (
     SELECT
         order_id,
         customer_id,
@@ -110,9 +110,39 @@ refunds AS (
         refund_transactions_kind,
         refund_transactions_status
     FROM {{ ref('int_shopify__order_refund')}}
+),
+
+joined_discounts AS (
+    SELECT
+        -- orders
+        orders.order_id,
+        orders.customer_id,
+        orders.total_discounts,
+        orders.total_line_items_price,
+        orders.total_price,
+        orders.total_shipping_price,
+        orders.total_subtotal_price,
+        orders.total_tax,
+        orders.taxes_included,
+        orders.created_at,
+        orders.cancelled_at,
+        orders.closed_at,
+        orders.processed_at,
+        orders.updated_at,
+        -- discounts
+        discounts.discount_code_code,
+        -- there are different kinds of discounts. Shipping discounts are only subtracted from shipping!
+        CASE WHEN discounts.discount_application_target_type = 'shipping_line' THEN discounts.discount_code_amount ELSE 0 END AS shipping_discount,
+        CASE WHEN discounts.discount_application_target_type = 'line_item' THEN discounts.discount_code_amount ELSE 0 END AS line_item_discount
+    FROM orders
+    LEFT JOIN discounts
+    ON orders.order_id = discounts.order_id
 )
 
--- total_subtotal_price = total_line_items_price - total_discounts
+
+-- coalesce joined columns
+-- create cte for business logic
+
 -- Klar Definition: Net Revenue = Gross Revenue - Taxes - Refund Value
 
 -- calculating net_revenue:
@@ -128,4 +158,4 @@ refunds AS (
 
 -- total_price is what the customer pays
 -- total_price = total_line_items_price - total_discounts + total_shipping_price + total_tax
-SELECT * FROM int_shopify__orders
+SELECT * FROM joined_discounts
