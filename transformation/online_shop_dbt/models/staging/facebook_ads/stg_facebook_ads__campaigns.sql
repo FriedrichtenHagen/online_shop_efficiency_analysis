@@ -1,6 +1,6 @@
 WITH campaigns AS (
     SELECT
-        id AS campaign_id,
+        CAST(id AS INT64) AS campaign_id,
         updated_time,
         created_time,
         name,

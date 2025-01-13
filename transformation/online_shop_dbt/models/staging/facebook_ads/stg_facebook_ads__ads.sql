@@ -1,6 +1,6 @@
 WITH ads AS (
     SELECT
-        id AS ad_id,
+        CAST(id AS INT64) AS ad_id,
         adset_id,
         campaign_id,
         creative__id,

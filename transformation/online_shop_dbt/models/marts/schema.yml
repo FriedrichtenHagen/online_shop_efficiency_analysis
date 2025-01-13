@@ -1,0 +1,54 @@
+models:
+  - name: mrt_marketing_shop__by_day
+    columns:
+      - name: created_at_date
+        data_type: date
+        data_tests:
+          - not_null
+          - unique
+        quote: true
+      - name: existing_customer_net_revenue
+        data_type: float64
+        quote: true
+      - name: new_customer_net_revenue
+        data_type: float64
+        quote: true
+      - name: net_revenue
+        data_type: float64
+        quote: true
+      - name: new_customer_orders
+        data_type: int64
+        quote: true
+      - name: orders
+        data_type: int64
+        quote: true
+      - name: reach
+        data_type: int64
+        quote: true
+      - name: impressions
+        data_type: int64
+        quote: true
+      - name: frequency
+        data_type: numeric
+        quote: true
+      - name: clicks
+        data_type: int64
+        quote: true
+      - name: unique_clicks
+        data_type: int64
+        quote: true
+      - name: spend
+        data_type: numeric
+        quote: true
+      - name: offsite_fb_pixel_add_to_cart_value
+        data_type: float64
+        quote: true
+      - name: offsite_fb_pixel_purchase_value
+        data_type: float64
+        quote: true
+      - name: offsite_fb_pixel_add_to_cart
+        data_type: float64
+        quote: true
+      - name: offsite_fb_pixel_purchase
+        data_type: float64
+        quote: true
