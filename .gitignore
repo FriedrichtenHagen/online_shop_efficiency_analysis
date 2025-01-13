@@ -5,3 +5,4 @@ bigquery_credentials/
 transformation/target/manifest.json
 transformation/target
 transformation/logs
+.vscode
