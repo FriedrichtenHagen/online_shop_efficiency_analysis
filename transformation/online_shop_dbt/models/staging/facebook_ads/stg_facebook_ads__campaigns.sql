@@ -1,6 +1,6 @@
 WITH campaigns AS (
     SELECT
-        id,
+        id AS campaign_id,
         updated_time,
         created_time,
         name,

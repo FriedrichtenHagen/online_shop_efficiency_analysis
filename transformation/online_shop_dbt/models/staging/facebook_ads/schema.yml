@@ -1,0 +1,273 @@
+models:
+  - name: stg_facebook_ads__action_values
+    columns:
+      - name: action_type
+        data_type: string
+        quote: true
+      - name: value
+        data_type: string
+        quote: true
+      - name: _7d_click
+        data_type: string
+        quote: true
+      - name: _dlt_root_id
+        data_type: string
+        quote: true
+      - name: _dlt_parent_id
+        data_type: string
+        quote: true
+      - name: _dlt_list_idx
+        data_type: int64
+        quote: true
+      - name: _dlt_id
+        data_type: string
+        quote: true
+      - name: _1d_view
+        data_type: string
+        quote: true
+  - name: stg_facebook_ads__actions
+    columns:
+      - name: action_type
+        data_type: string
+        quote: true
+      - name: value
+        data_type: string
+        quote: true
+      - name: _7d_click
+        data_type: string
+        quote: true
+      - name: _dlt_root_id
+        data_type: string
+        quote: true
+      - name: _dlt_parent_id
+        data_type: string
+        quote: true
+      - name: _dlt_list_idx
+        data_type: int64
+        quote: true
+      - name: _dlt_id
+        data_type: string
+        quote: true
+      - name: _1d_view
+        data_type: string
+        quote: true
+  - name: stg_facebook_ads__ads
+    columns:
+      - name: ad_id
+        data_type: string
+        data_tests:
+          - not_null
+        quote: true
+      - name: adset_id
+        data_type: string
+        data_tests:
+          - not_null
+        quote: true
+      - name: campaign_id
+        data_type: string
+        data_tests:
+          - not_null
+        quote: true
+      - name: creative__id
+        data_type: string
+        quote: true
+      - name: updated_time
+        data_type: timestamp
+        quote: true
+      - name: created_time
+        data_type: timestamp
+        quote: true
+      - name: name
+        data_type: string
+        quote: true
+      - name: status
+        data_type: string
+        quote: true
+      - name: effective_status
+        data_type: string
+        quote: true
+      - name: targeting__age_max
+        data_type: int64
+        quote: true
+      - name: targeting__age_min
+        data_type: int64
+        quote: true
+      - name: targeting__targeting_automation__advantage_audience
+        data_type: int64
+        quote: true
+      - name: _dlt_load_id
+        data_type: string
+        quote: true
+      - name: _dlt_id
+        data_type: string
+        quote: true
+      - name: targeting__targeting_optimization
+        data_type: string
+        quote: true
+  - name: stg_facebook_ads__adsets
+    columns:
+      - name: adset_id
+        data_type: string
+        data_tests:
+          - not_null
+        quote: true
+      - name: updated_time
+        data_type: timestamp
+        quote: true
+      - name: created_time
+        data_type: timestamp
+        quote: true
+      - name: name
+        data_type: string
+        quote: true
+      - name: status
+        data_type: string
+        quote: true
+      - name: effective_status
+        data_type: string
+        quote: true
+      - name: campaign_id
+        data_type: string
+        quote: true
+      - name: start_time
+        data_type: timestamp
+        quote: true
+      - name: end_time
+        data_type: timestamp
+        quote: true
+      - name: optimization_goal
+        data_type: string
+        quote: true
+      - name: promoted_object__page_id
+        data_type: string
+        quote: true
+      - name: billing_event
+        data_type: string
+        quote: true
+      - name: targeting__age_max
+        data_type: int64
+        quote: true
+      - name: targeting__age_min
+        data_type: int64
+        quote: true
+      - name: targeting__targeting_automation__advantage_audience
+        data_type: int64
+        quote: true
+      - name: _dlt_load_id
+        data_type: string
+        quote: true
+      - name: _dlt_id
+        data_type: string
+        quote: true
+      - name: promoted_object__pixel_id
+        data_type: string
+        quote: true
+      - name: promoted_object__custom_event_type
+        data_type: string
+        quote: true
+      - name: daily_budget
+        data_type: string
+        quote: true
+      - name: lifetime_budget
+        data_type: string
+        quote: true
+      - name: bid_strategy
+        data_type: string
+        quote: true
+      - name: targeting__targeting_optimization
+        data_type: string
+        quote: true
+  - name: stg_facebook_ads__facebook_insights
+    columns:
+      - name: campaign_id
+        data_type: string
+        data_tests:
+          - not_null
+        quote: true
+      - name: updated_time
+        data_type: timestamp
+        quote: true
+      - name: created_time
+        data_type: timestamp
+        quote: true
+      - name: name
+        data_type: string
+        quote: true
+      - name: status
+        data_type: string
+        quote: true
+      - name: effective_status
+        data_type: string
+        quote: true
+      - name: objective
+        data_type: string
+        quote: true
+      - name: start_time
+        data_type: timestamp
+        quote: true
+      - name: stop_time
+        data_type: timestamp
+        quote: true
+      - name: daily_budget
+        data_type: string
+        quote: true
+      - name: _dlt_load_id
+        data_type: string
+        quote: true
+      - name: _dlt_id
+        data_type: string
+        quote: true
+      - name: account_id
+        data_type: string
+        tests:
+          - not_null
+        quote: true
+      - name: adset_id
+        data_type: int64
+        tests:
+          - not_null
+        quote: true
+      - name: ad_id
+        data_type: int64
+        tests:
+          - not_null
+        quote: true
+      - name: date_start
+        data_type: timestamp
+        quote: true
+      - name: date_stop
+        data_type: timestamp
+        quote: true
+      - name: reach
+        data_type: int64
+        quote: true
+      - name: impressions
+        data_type: int64
+        quote: true
+      - name: frequency
+        data_type: numeric
+        quote: true
+      - name: clicks
+        data_type: int64
+        quote: true
+      - name: unique_clicks
+        data_type: int64
+        quote: true
+      - name: ctr
+        data_type: numeric
+        quote: true
+      - name: unique_ctr
+        data_type: numeric
+        quote: true
+      - name: cpc
+        data_type: numeric
+        quote: true
+      - name: cpm
+        data_type: numeric
+        quote: true
+      - name: cpp
+        data_type: numeric
+        quote: true
+      - name: spend
+        data_type: numeric
+        quote: true
