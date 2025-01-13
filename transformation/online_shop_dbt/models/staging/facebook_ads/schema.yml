@@ -271,3 +271,8 @@ models:
       - name: spend
         data_type: numeric
         quote: true
+      - name: insight_date
+        data_type: date
+        tests:
+          - not_null
+        quote: true

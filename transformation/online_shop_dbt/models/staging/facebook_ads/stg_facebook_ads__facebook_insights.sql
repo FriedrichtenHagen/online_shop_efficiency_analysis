@@ -4,8 +4,8 @@ WITH facebook_insights AS (
         campaign_id,
         adset_id,
         ad_id,
-        date_start,
-        date_stop,
+        CAST(date_start AS DATE) AS insight_date,
+        -- date_stop, -- both date field always contain the same data
         reach,
         impressions,
         frequency,
