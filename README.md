@@ -56,4 +56,5 @@ BigQuery Job User
 Further improvements could be made to this project:
 - dockerizing the individual parts
 - create ci/cd pipeline and run everything in the cloud
+- adding an orchestration tool for daily runs
 - testing is currently only done in the transformation layer. Testing right in the extraction could be added

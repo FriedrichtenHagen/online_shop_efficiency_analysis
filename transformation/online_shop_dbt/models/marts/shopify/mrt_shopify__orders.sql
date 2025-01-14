@@ -98,8 +98,6 @@ discounts AS (
     FROM {{ ref('int_shopify__order_discount')}}
 ),
 
--- should a refunded shipping be subtracted from our net revenue? Does net rev include shipping? 
--- should refunds be added to the (day of the) order or later to the day of the refund?
 refunds AS (
     SELECT
         order_id,

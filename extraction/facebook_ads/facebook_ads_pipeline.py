@@ -128,7 +128,7 @@ def load_insights() -> None:
 
 
 if __name__ == "__main__":
-    # load_all_ads_objects()
+    load_all_ads_objects()
     load_insights()
 
     # merge_ads_objects()
