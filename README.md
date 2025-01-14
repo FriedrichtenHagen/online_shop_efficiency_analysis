@@ -4,7 +4,16 @@ This project allows you to analyze an ecommerce shop using facebook ads and shop
 This project will extract data from the facebook ads api, transform and model the data for analytics and visualize in a dashboard.
 Available metrics include CAC, MER and aMER.
 
+### Project Overview:
 ![graphic for project overview](images/overview_graphic.png)
+
+### dbt data modelling overview:
+The transformation in dbt is divided into three stages. 
+Staging (stg_) for simple cleaning of source data. 
+Intermediate (int_) for applying joins and business logic. 
+Marts (mrt_) for tables that are ready for use in the BI layer. These tables are prejoined and aggregated so that this does not need to be done in LookerStudio.
+If a different BI tool was used, this layer would contain the dimensional model, e.g. facts and dimension tables.
+![graphic for project overview](images/dbt_lineage.png)
 
 
 ## How to replicate this project:
