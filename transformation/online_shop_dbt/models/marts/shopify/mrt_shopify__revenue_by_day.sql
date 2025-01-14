@@ -43,7 +43,7 @@ aggregate_by_day AS (
        SUM(CASE WHEN new_customer = 1 THEN net_revenue ELSE 0 END) AS new_customer_net_revenue,
        SUM(net_revenue) AS net_revenue,
        SUM(new_customer) AS new_customer_orders,
-       SUM(DISTINCT order_id) AS orders
+       COUNT(DISTINCT order_id) AS orders
     FROM mrt_shopify__orders
     GROUP BY 1
 )
